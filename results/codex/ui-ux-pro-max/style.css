@@ -186,7 +186,39 @@ a {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding-top: 5rem;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "PLACEHOLDER DE IMAGEM ESTRATEGICA";
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  width: min(40vw, 250px);
+  min-height: 92px;
+  padding: 0.65rem 0.8rem;
+  border-radius: 12px;
+  border: 2px dashed rgba(123, 230, 255, 0.75);
+  background:
+    linear-gradient(145deg, rgba(5, 8, 20, 0.58), rgba(7, 13, 32, 0.88)),
+    url("../../../assets/v1/biblia.png") center / cover no-repeat;
+  color: #dff5ff;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-grid {
@@ -528,5 +560,15 @@ input[type="number"] {
   [data-reveal] {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero::after {
+    width: min(74vw, 260px);
+    min-height: 84px;
+    right: 0.55rem;
+    bottom: 0.45rem;
+    font-size: 0.61rem;
   }
 }

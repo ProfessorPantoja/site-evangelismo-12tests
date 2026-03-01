@@ -186,7 +186,7 @@ mark {
 
 /* Ministrante */
 .ministrante-cro { padding: 5rem 0; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.grid-2 { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
 .label { font-size: 0.75rem; font-weight: 700; color: var(--primary); letter-spacing: 0.1em; }
 .missing-placeholder, .missing-text, .contact-missing { color: #dc2626; font-size: 0.875rem; font-weight: 600; }
 .img-placeholder { background: #e5e7eb; width: 100%; aspect-ratio: 1; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-weight: 700; }
@@ -208,9 +208,15 @@ mark {
 .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem; }
 .copyright { text-align: center; opacity: 0.5; }
 
+@media (min-width: 960px) {
+    .grid-2 {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 4rem;
+    }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
-    .grid-2 { grid-template-columns: 1fr; gap: 2rem; }
     .hero-cro { padding: 3rem 0; }
     .btn-nav { display: none; }
 }
