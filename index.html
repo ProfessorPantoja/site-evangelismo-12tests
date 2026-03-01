@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Lab | Comparador de 12 Páginas</title>
+    <meta
+      name="description"
+      content="Landing Lab com 12 variações de landing page para comparação entre IA e skill."
+    />
+    <style>
+      :root {
+        --bg: #0f172a;
+        --surface: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --muted: #94a3b8;
+        --accent: #f59e0b;
+        --line: #334155;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: radial-gradient(circle at top, #172554 0%, var(--bg) 42%, #0b1020 100%);
+        color: var(--text);
+      }
+
+      .container {
+        width: min(1080px, 92%);
+        margin: 0 auto;
+        padding: 2rem 0 3rem;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.8rem, 5vw, 2.4rem);
+      }
+
+      .subtitle {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 860px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .group {
+        background: color-mix(in srgb, var(--surface) 86%, black);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem;
+      }
+
+      .group h2 {
+        margin: 0 0 0.8rem;
+        font-size: 1.05rem;
+        color: var(--accent);
+        letter-spacing: 0.02em;
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      li + li {
+        margin-top: 0.35rem;
+      }
+
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .tip {
+        margin-top: 1rem;
+        background: rgba(245, 158, 11, 0.12);
+        border: 1px solid rgba(245, 158, 11, 0.45);
+        border-radius: 10px;
+        padding: 0.75rem 0.9rem;
+        color: #fef3c7;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Landing Lab: 12 páginas</h1>
+      <p class="subtitle">Deploy único no Vercel para comparar todas as variações.</p>
+
+      <section class="grid" aria-label="Lista de páginas">
+        <article class="group">
+          <h2>1. Opus</h2>
+          <ol>
+            <li><a href="results/opus/ui-ux-pro-max/index.html">ui-ux-pro-max</a></li>
+            <li><a href="results/opus/frontend-design/index.html">frontend-design</a></li>
+            <li><a href="results/opus/marketing-cro/index.html">marketing-cro</a></li>
+          </ol>
+        </article>
+
+        <article class="group">
+          <h2>2. Gemini Evolved</h2>
+          <ol>
+            <li><a href="results/gemini-evolved/ui-ux-pro-max/index.html">ui-ux-pro-max</a></li>
+            <li><a href="results/gemini-evolved/frontend-design/index.html">frontend-design</a></li>
+            <li><a href="results/gemini-evolved/marketing-cro/index.html">marketing-cro</a></li>
+          </ol>
+        </article>
+
+        <article class="group">
+          <h2>3. Gemini</h2>
+          <ol>
+            <li><a href="results/gemini/ui-ux-pro-max/index.html">ui-ux-pro-max</a></li>
+            <li><a href="results/gemini/frontend-design/index.html">frontend-design</a></li>
+            <li><a href="results/gemini/marketing-cro/index.html">marketing-cro</a></li>
+          </ol>
+        </article>
+
+        <article class="group">
+          <h2>4. Codex</h2>
+          <ol>
+            <li><a href="results/codex/ui-ux-pro-max/index.html">ui-ux-pro-max</a></li>
+            <li><a href="results/codex/frontend-design/index.html">frontend-design</a></li>
+            <li><a href="results/codex/marketing-cro/index.html">marketing-cro</a></li>
+          </ol>
+        </article>
+      </section>
+
+      <p class="tip">
+        Dica: abra esta página em mobile e use os links para validar as versões com vídeo de fundo.
+      </p>
+    </main>
+  </body>
+</html>
