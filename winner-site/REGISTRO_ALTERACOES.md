@@ -66,3 +66,9 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Tamanho da `navbar__brand-logo` em telas ate 520px aumentado de 34x34 para 36x36, mantendo formato quadrado com cantos arredondados.
+
+11. Ajuste manual do usuario para ampliar mais a logo no mobile.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Tamanho da `navbar__brand-logo` em telas ate 520px aumentado de 36x36 para 42x42.

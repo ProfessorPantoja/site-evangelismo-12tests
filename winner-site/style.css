@@ -1148,8 +1148,8 @@ a:focus-visible {
 
 @media (max-width: 520px) {
     .navbar__brand-logo {
-        width: 36px;
-        height: 36px;
+        width: 42px;
+        height: 42px;
         border-radius: 9px;
     }
 
