@@ -20,3 +20,9 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Aplicado `white-space: nowrap` e `flex-shrink: 0` no CTA fixo do header para evitar quebra do texto.
+
+4. Reordenacao das secoes para exibir o ministrante antes de "Como Chegar".
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Secao "Ministrante" movida para cima da secao "Como Chegar", mantendo o restante da pagina.
