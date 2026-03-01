@@ -14,3 +14,9 @@ Arquivos alterados:
 Resumo:
 - Reduzido tamanho visual do botao de inscricao no topo (padding, fonte e icone), mantendo visibilidade continua.
 - Ajuste adicional para telas pequenas com CTA mais compacto.
+
+3. Botao "Inscreva-se" do topo mantido em uma unica linha.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Aplicado `white-space: nowrap` e `flex-shrink: 0` no CTA fixo do header para evitar quebra do texto.
