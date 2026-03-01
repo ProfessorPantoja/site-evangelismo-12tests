@@ -191,9 +191,31 @@ a {
   padding-top: 5rem;
 }
 
+.hero-video-mobile {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 8, 20, 0.5) 0%, rgba(7, 13, 32, 0.7) 100%);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero > .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero::after {
@@ -561,14 +583,22 @@ input[type="number"] {
     opacity: 1;
     transform: none;
   }
+
+  .hero-video-mobile {
+    display: none !important;
+  }
 }
 
 @media (max-width: 760px) {
+  .hero-video-mobile {
+    display: block;
+  }
+
+  .hero::before {
+    opacity: 1;
+  }
+
   .hero::after {
-    width: min(74vw, 260px);
-    min-height: 84px;
-    right: 0.55rem;
-    bottom: 0.45rem;
-    font-size: 0.61rem;
+    display: none;
   }
 }
