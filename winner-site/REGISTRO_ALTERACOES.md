@@ -72,3 +72,11 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Tamanho da `navbar__brand-logo` em telas ate 520px aumentado de 36x36 para 42x42.
+
+12. Ajuste de destaque real da logo no mobile (sem travar no visual anterior).
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Em telas ate 520px, a logo passou de 42x42 para 46x46.
+- Reduzido padding interno da logo de 3px para 1px no mobile para aumentar a area visivel da arte.
+- Ajustado o `gap` da marca para manter respiro horizontal no topo.
