@@ -60,3 +60,9 @@ Arquivos alterados:
 Resumo:
 - Regras de links do menu mobile passaram a ignorar elementos `.btn`.
 - Botao do menu mobile recebeu estilo dedicado para manter contraste, alinhamento central e padding correto.
+
+10. Ajuste fino da logo no mobile para melhorar legibilidade no topo.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Tamanho da `navbar__brand-logo` em telas ate 520px aumentado de 34x34 para 36x36, mantendo formato quadrado com cantos arredondados.
