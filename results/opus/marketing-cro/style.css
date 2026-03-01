@@ -344,7 +344,7 @@ a:hover {
     z-index: 0;
 }
 
-.hero > * {
+.hero > *:not(.hero__video-mobile) {
     position: relative;
     z-index: 2;
 }
