@@ -41,3 +41,9 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Ajustado o estilo da `navbar__brand-logo` para largura maior, altura menor e bordas arredondadas retangulares.
+
+7. Correcao da logo do topo para formato quadrado com cantos arredondados.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Ajustado `navbar__brand-logo` para largura e altura iguais (quadrada), mantendo cantos arredondados.
