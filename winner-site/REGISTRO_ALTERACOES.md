@@ -47,3 +47,16 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Ajustado `navbar__brand-logo` para largura e altura iguais (quadrada), mantendo cantos arredondados.
+
+8. Ajuste manual do usuario no tamanho da logo quadrada do topo.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Logo mantida quadrada com cantos arredondados e dimensoes ajustadas para 40x40 no desktop e 34x34 no mobile.
+
+9. Correcao do botao "Inscreva-se" dentro do menu mobile.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Regras de links do menu mobile passaram a ignorar elementos `.btn`.
+- Botao do menu mobile recebeu estilo dedicado para manter contraste, alinhamento central e padding correto.
