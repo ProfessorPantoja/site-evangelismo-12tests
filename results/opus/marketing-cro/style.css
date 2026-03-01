@@ -81,7 +81,10 @@ html {
 
 body {
     font-family: var(--font-body);
-    background: var(--bg);
+    background:
+        linear-gradient(rgba(246, 250, 252, 0.9), rgba(246, 250, 252, 0.92)),
+        url("../../../assets/v1/hero.png") center/cover fixed no-repeat,
+        var(--bg);
     color: var(--fg);
     line-height: 1.65;
     overflow-x: hidden;

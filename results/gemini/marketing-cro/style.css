@@ -19,7 +19,9 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text);
     line-height: 1.5;
-    background-color: var(--white);
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.94)),
+        url("../../../assets/v1/hero.png") center/cover fixed no-repeat;
 }
 
 .container {
