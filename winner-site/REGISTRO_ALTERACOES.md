@@ -26,3 +26,9 @@ Arquivos alterados:
 - `winner-site/index.html`
 Resumo:
 - Secao "Ministrante" movida para cima da secao "Como Chegar", mantendo o restante da pagina.
+
+5. Logo da igreja no topo alterada de formato circular para retangular com cantos arredondados.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Ajustado o estilo da `navbar__brand-logo` para largura maior, altura menor e bordas arredondadas retangulares.

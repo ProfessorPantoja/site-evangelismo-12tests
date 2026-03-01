@@ -198,14 +198,15 @@ a:focus-visible {
 }
 
 .navbar__brand-logo {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 34px;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.94);
     border: 1px solid rgba(212, 168, 83, 0.38);
     box-shadow: var(--shadow-sm);
     flex-shrink: 0;
+    padding: 2px 4px;
 }
 
 .navbar__links {
@@ -1131,6 +1132,12 @@ a:focus-visible {
 }
 
 @media (max-width: 520px) {
+    .navbar__brand-logo {
+        width: 50px;
+        height: 30px;
+        border-radius: 9px;
+    }
+
     .navbar__cta svg {
         display: none;
     }
