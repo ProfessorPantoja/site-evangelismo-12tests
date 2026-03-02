@@ -1148,7 +1148,8 @@ a:focus-visible {
 
 @media (max-width: 520px) {
     .navbar {
-        padding: var(--space-2) var(--space-3);
+        padding: var(--space-3) var(--space-3);
+        min-height: 64px;
     }
 
     .navbar__brand {

@@ -116,3 +116,10 @@ Arquivos alterados:
 Resumo:
 - Tamanho da `navbar__brand-logo` em telas ate 520px reduzido de 40x40 para 38x38.
 - Mantido enquadramento com `object-fit: cover` e `object-position: center 16%`.
+
+18. Aumento leve da barra superior no mobile para mais respiro visual.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- A `navbar` em telas ate 520px recebeu padding vertical maior (`space-3`) e `min-height: 64px`.
+- Objetivo: dar mais altura para a barra da logo/CTA/menu sem perder proporcao.
