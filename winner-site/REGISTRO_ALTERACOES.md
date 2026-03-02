@@ -102,3 +102,10 @@ Arquivos alterados:
 Resumo:
 - Tamanho da `navbar__brand-logo` em telas ate 520px reduzido de 56x56 para 46x46.
 - Mantido enquadramento com `object-fit: cover` e `object-position: center 16%`.
+
+16. Ajuste final solicitado: reducao adicional de 6px na logo mobile.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Tamanho da `navbar__brand-logo` em telas ate 520px reduzido de 46x46 para 40x40.
+- Mantido enquadramento com `object-fit: cover` e `object-position: center 16%`.
