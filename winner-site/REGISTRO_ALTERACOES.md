@@ -80,3 +80,11 @@ Resumo:
 - Em telas ate 520px, a logo passou de 42x42 para 46x46.
 - Reduzido padding interno da logo de 3px para 1px no mobile para aumentar a area visivel da arte.
 - Ajustado o `gap` da marca para manter respiro horizontal no topo.
+
+13. Aumento forte da logo no mobile com rebalanceamento do header.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Em telas ate 520px, a logo passou de 46x46 para 56x56 para ganho visual claro.
+- Header mobile teve padding reduzido para acomodar melhor a nova logo sem apertar o topo.
+- Texto da marca foi levemente reduzido no mobile para manter proporcao e legibilidade.
