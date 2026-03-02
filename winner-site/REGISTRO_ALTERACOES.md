@@ -95,3 +95,10 @@ Arquivos alterados:
 Resumo:
 - No mobile, `navbar__brand-logo` passou a usar `object-fit: cover` com `object-position: center 16%`.
 - Mantido tamanho 56x56, com foco visual maior no simbolo da logo dentro do quadrado.
+
+15. Reducao da logo no mobile para equilibrio visual do topo.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Tamanho da `navbar__brand-logo` em telas ate 520px reduzido de 56x56 para 46x46.
+- Mantido enquadramento com `object-fit: cover` e `object-position: center 16%`.

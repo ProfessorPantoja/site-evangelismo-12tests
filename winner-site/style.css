@@ -1162,8 +1162,8 @@ a:focus-visible {
     }
 
     .navbar__brand-logo {
-        width: 56px;
-        height: 56px;
+        width: 46px;
+        height: 46px;
         border-radius: 12px;
         padding: 0;
         object-fit: cover;
