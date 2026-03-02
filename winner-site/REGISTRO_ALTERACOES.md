@@ -123,3 +123,10 @@ Arquivos alterados:
 Resumo:
 - A `navbar` em telas ate 520px recebeu padding vertical maior (`space-3`) e `min-height: 64px`.
 - Objetivo: dar mais altura para a barra da logo/CTA/menu sem perder proporcao.
+
+19. Reducao adicional do botao fixo "Inscreva-se" na navbar mobile.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Em telas ate 520px, o `navbar__cta` ficou mais discreto (padding e fonte menores).
+- Novo ajuste: `padding: 0.26rem 0.56rem`, `font-size: 0.64rem`, `letter-spacing: 0.03em`.

@@ -1171,6 +1171,12 @@ a:focus-visible {
         object-position: center 16%;
     }
 
+    .navbar__cta {
+        padding: 0.26rem 0.56rem;
+        font-size: 0.64rem;
+        letter-spacing: 0.03em;
+    }
+
     .navbar__cta svg {
         display: none;
     }
