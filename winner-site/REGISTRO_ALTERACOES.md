@@ -144,3 +144,10 @@ Resumo:
 - Menu mobile ficou mais compacto com menos espaco interno (`padding` menor) e menor `gap` entre itens.
 - Links do menu receberam menor padding vertical e leve reducao de fonte.
 - Botao "Inscreva-se" do menu mobile tambem foi compactado para acompanhar o novo ritmo visual.
+
+22. Sincronizacao da ordem dos links com a ordem real das secoes da pagina.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Navbar desktop e menu mobile ajustados para: Sobre, Informacoes, Ministrante, Como Chegar, Inscricao, FAQ.
+- Bloco de links do rodape atualizado para refletir a mesma logica de navegacao.
