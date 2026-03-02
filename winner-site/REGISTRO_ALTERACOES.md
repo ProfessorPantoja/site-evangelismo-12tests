@@ -136,3 +136,11 @@ Arquivos alterados:
 - `winner-site/style.css`
 Resumo:
 - Aplicado `padding: 2px` na `navbar__brand-logo` em telas ate 520px para evitar que a arte encoste na borda do quadrado.
+
+21. Reducao do espacamento do menu mobile da navbar.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Menu mobile ficou mais compacto com menos espaco interno (`padding` menor) e menor `gap` entre itens.
+- Links do menu receberam menor padding vertical e leve reducao de fonte.
+- Botao "Inscreva-se" do menu mobile tambem foi compactado para acompanhar o novo ritmo visual.
