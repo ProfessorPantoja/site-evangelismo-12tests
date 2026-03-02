@@ -130,3 +130,9 @@ Arquivos alterados:
 Resumo:
 - Em telas ate 520px, o `navbar__cta` ficou mais discreto (padding e fonte menores).
 - Novo ajuste: `padding: 0.26rem 0.56rem`, `font-size: 0.64rem`, `letter-spacing: 0.03em`.
+
+20. Respiro interno da logo da igreja na navbar mobile.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Aplicado `padding: 2px` na `navbar__brand-logo` em telas ate 520px para evitar que a arte encoste na borda do quadrado.
