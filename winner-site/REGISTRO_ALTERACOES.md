@@ -151,3 +151,10 @@ Arquivos alterados:
 Resumo:
 - Navbar desktop e menu mobile ajustados para: Sobre, Informacoes, Ministrante, Como Chegar, Inscricao, FAQ.
 - Bloco de links do rodape atualizado para refletir a mesma logica de navegacao.
+
+23. Foto do ministrante alterada de circular para retangular vertical arredondada.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Moldura da foto ajustada para proporcao retrato (3:4), com cantos arredondados.
+- Imagem interna atualizada para acompanhar o novo formato e melhor enquadramento do rosto.

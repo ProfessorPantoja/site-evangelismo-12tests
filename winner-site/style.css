@@ -730,9 +730,9 @@ a:focus-visible {
 }
 
 .speaker-card__photo-wrap {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: clamp(128px, 38vw, 160px);
+    aspect-ratio: 3 / 4;
+    border-radius: 18px;
     margin: 0 auto var(--space-6);
     padding: 3px;
     background: linear-gradient(135deg, var(--accent-gold), var(--accent-warm));
@@ -742,8 +742,9 @@ a:focus-visible {
 .speaker-card__photo {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 15px;
     object-fit: cover;
+    object-position: center 18%;
     border: 2px solid rgba(10, 14, 26, 0.9);
 }
 
