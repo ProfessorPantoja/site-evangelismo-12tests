@@ -1166,6 +1166,8 @@ a:focus-visible {
         height: 56px;
         border-radius: 12px;
         padding: 0;
+        object-fit: cover;
+        object-position: center 16%;
     }
 
     .navbar__cta svg {

@@ -88,3 +88,10 @@ Resumo:
 - Em telas ate 520px, a logo passou de 46x46 para 56x56 para ganho visual claro.
 - Header mobile teve padding reduzido para acomodar melhor a nova logo sem apertar o topo.
 - Texto da marca foi levemente reduzido no mobile para manter proporcao e legibilidade.
+
+14. Enquadramento da logo no mobile para ocupar melhor a area marcada no topo.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- No mobile, `navbar__brand-logo` passou a usar `object-fit: cover` com `object-position: center 16%`.
+- Mantido tamanho 56x56, com foco visual maior no simbolo da logo dentro do quadrado.
