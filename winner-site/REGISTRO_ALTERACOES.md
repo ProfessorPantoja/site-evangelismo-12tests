@@ -71,6 +71,15 @@ Resumo:
 - Upload do comprovante mantido como opcional por causa da friccao em celulares.
 - Valor mantido em destaque na etapa de pagamento para reduzir erro de usuarios desatentos.
 
+9. Ajustes de conteudo no site solicitados diretamente pela Diaconisa Marcia por ligacao telefonica.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Adicionado no site que o evento inclui cafe da manha, almoco, lanche da tarde e certificado.
+- Inserido no bloco "Sobre" o tema de como resolver situacoes inusitadas ao evangelizar.
+- Secao de informacoes atualizada para reforcar que o treinamento dura o dia inteiro, com intervalos.
+- Bloco de mapa/localizacao reforcado com a referencia da Passarela Engenho da Rainha sentido Centro e o aviso de que nao ha estacionamento.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
