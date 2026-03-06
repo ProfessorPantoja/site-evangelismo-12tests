@@ -56,6 +56,21 @@ Arquivos alterados:
 Resumo:
 - Capturas do Google Forms renomeadas para nomes curtos e claros, facilitando consulta e manutencao.
 
+7. Atualizacao do resumo do formulario com a versao textual mais recente.
+Arquivos alterados:
+- `winner-site/FORMULARIO_ATUAL.md`
+Resumo:
+- Documento do formulario ajustado com base na transcricao manual mais recente informada pelo usuario, refletindo os detalhes novos do fluxo e do texto de confirmacao.
+
+8. Formulario marcado como pronto com decisoes operacionais definidas.
+Arquivos alterados:
+- `winner-site/FORMULARIO_ATUAL.md`
+Resumo:
+- Registrado que o formulario seguira com login Google por enquanto.
+- Confirmacao da inscricao definida como `pagamento + contato manual`.
+- Upload do comprovante mantido como opcional por causa da friccao em celulares.
+- Valor mantido em destaque na etapa de pagamento para reduzir erro de usuarios desatentos.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
