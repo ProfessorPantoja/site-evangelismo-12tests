@@ -22,6 +22,7 @@ Resumo:
 
 3. Rastreamento de origem para acessos e cliques vindos de QR Code.
 Arquivos alterados:
+- `winner-site/api/qr.mjs`
 - `winner-site/api/track-qr.mjs`
 - `winner-site/api/track-register.mjs`
 - `winner-site/api/_lib/attribution.mjs`
@@ -31,7 +32,15 @@ Arquivos alterados:
 Resumo:
 - Criadas rotas serverless na Vercel para registrar visitas pelo QR Code e cliques em inscricao.
 - Landing passa a preservar a origem (`src=qrcode`, `qr_label`, `utm_*`) e a encaminhar os CTAs pelo endpoint de rastreamento.
-- Link base do QR documentado para uso imediato, com suporte a variacoes por etiqueta fisica via `?label=...`.
+- Link publico do QR padronizado como `/qr`, com suporte a variacoes por etiqueta fisica via `?label=...`.
+
+4. Mapa operacional do caminho do usuario na inscricao + ativacao real do `/qr`.
+Arquivos alterados:
+- `winner-site/MAPA_CAMINHO_USUARIO_INSCRICAO.md`
+- `winner-site/vercel.json`
+Resumo:
+- Criado documento de decisao focado no caminho do usuario, gargalos do formulario e recomendacoes de ordem pratica.
+- Adicionado rewrite para tornar `/qr` uma rota publica valida na Vercel, sem expor `/api/qr` na arte do cartaz.
 
 ## 2026-03-01
 
