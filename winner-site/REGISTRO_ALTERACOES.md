@@ -80,6 +80,20 @@ Resumo:
 - Secao de informacoes atualizada para reforcar que o treinamento dura o dia inteiro, com intervalos.
 - Bloco de mapa/localizacao reforcado com a referencia da Passarela Engenho da Rainha sentido Centro e o aviso de que nao ha estacionamento.
 
+10. Transporte simplificado no site conforme alinhamento com a Diaconisa Marcia.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Removidos os numeros de onibus e o alerta vermelho de lista pendente.
+- Site passou a orientar em varios pontos que nao ha vagas de carro e que o publico deve vir de metro ou onibus.
+- Botao do mapa ajustado para enfatizar consulta de rota no Google Maps.
+
+11. Ajuste visual final no bloco de estacionamento.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Removido o destaque vermelho do texto "NÃO TEM estacionamento no local", mantendo a mensagem com o mesmo peso do restante da informacao.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
