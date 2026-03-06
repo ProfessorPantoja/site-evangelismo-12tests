@@ -20,6 +20,19 @@ Resumo:
 - Criado script raiz para tocar um som de conclusao mais perceptivel ao fim das tarefas.
 - Prioridade para `~/sounds/done.wav` quando existir, com fallback para sons do Linux Mint via `paplay` ou `canberra-gtk-play`.
 
+3. Rastreamento de origem para acessos e cliques vindos de QR Code.
+Arquivos alterados:
+- `winner-site/api/track-qr.mjs`
+- `winner-site/api/track-register.mjs`
+- `winner-site/api/_lib/attribution.mjs`
+- `winner-site/index.html`
+- `winner-site/script.js`
+- `winner-site/README.md`
+Resumo:
+- Criadas rotas serverless na Vercel para registrar visitas pelo QR Code e cliques em inscricao.
+- Landing passa a preservar a origem (`src=qrcode`, `qr_label`, `utm_*`) e a encaminhar os CTAs pelo endpoint de rastreamento.
+- Link base do QR documentado para uso imediato, com suporte a variacoes por etiqueta fisica via `?label=...`.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.

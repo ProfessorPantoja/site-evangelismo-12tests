@@ -4,6 +4,80 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+    const ATTRIBUTION_STORAGE_KEY = 'winner-site-attribution';
+    const REGISTRATION_ENDPOINT = '/api/track-register';
+
+    const normalizeValue = (value) => {
+        if (!value) return '';
+
+        return value
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9_-]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .slice(0, 64);
+    };
+
+    const getCurrentAttribution = () => {
+        const url = new URL(window.location.href);
+        const source = normalizeValue(url.searchParams.get('src'));
+        const qrLabel = normalizeValue(url.searchParams.get('qr_label'));
+        const utmSource = normalizeValue(url.searchParams.get('utm_source'));
+        const utmMedium = normalizeValue(url.searchParams.get('utm_medium'));
+        const utmCampaign = normalizeValue(url.searchParams.get('utm_campaign'));
+        const utmContent = normalizeValue(url.searchParams.get('utm_content'));
+
+        if (!source && !qrLabel && !utmSource && !utmMedium && !utmCampaign && !utmContent) {
+            return null;
+        }
+
+        return {
+            src: source || 'qrcode',
+            qr_label: qrLabel || 'qrcode',
+            utm_source: utmSource || 'qrcode',
+            utm_medium: utmMedium || 'offline',
+            utm_campaign: utmCampaign || 'conscientizacao_evangelistica_2026',
+            utm_content: utmContent || qrLabel || 'qrcode'
+        };
+    };
+
+    const readSavedAttribution = () => {
+        try {
+            const rawValue = window.localStorage.getItem(ATTRIBUTION_STORAGE_KEY);
+            return rawValue ? JSON.parse(rawValue) : null;
+        } catch (error) {
+            return null;
+        }
+    };
+
+    const saveAttribution = (attribution) => {
+        if (!attribution) return;
+
+        try {
+            window.localStorage.setItem(ATTRIBUTION_STORAGE_KEY, JSON.stringify(attribution));
+        } catch (error) {
+            // Ignore storage failures and keep navigation working.
+        }
+    };
+
+    const attribution = getCurrentAttribution() || readSavedAttribution();
+    saveAttribution(attribution);
+
+    document.querySelectorAll('[data-registration-link]').forEach((link) => {
+        const trackedUrl = new URL(REGISTRATION_ENDPOINT, window.location.origin);
+
+        if (attribution) {
+            Object.entries(attribution).forEach(([key, value]) => {
+                if (value) {
+                    trackedUrl.searchParams.set(key, value);
+                }
+            });
+        }
+
+        link.href = trackedUrl.pathname + trackedUrl.search;
+    });
+
     // === Mobile Menu Toggle ===
     const toggle = document.getElementById('mobile-toggle');
     const menu = document.getElementById('mobile-menu');

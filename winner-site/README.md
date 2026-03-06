@@ -34,6 +34,33 @@ O script gera:
 - `assets/v1/pastor.webp`
 - `assets/Video/Cruz1-optimized.mp4`
 
+## Rastreamento de QR Code
+
+Link pronto para gerar o QR Code principal:
+
+```text
+https://admpf-evangelismo-2026.vercel.app/api/track-qr
+```
+
+Link com identificador de origem fisica:
+
+```text
+https://admpf-evangelismo-2026.vercel.app/api/track-qr?label=cartaz-a
+```
+
+Fluxo configurado:
+
+- `api/track-qr` registra a visita no log da Vercel e redireciona para a landing com origem `qrcode`
+- a landing preserva essa origem no navegador
+- todos os CTAs de inscricao passam por `api/track-register`
+- `api/track-register` registra o clique de inscricao no log da Vercel e redireciona para o formulario
+
+Observacao:
+
+- isso rastreia visitas do QR e cliques em inscricao sem depender de Google Analytics
+- com o `bit.ly` atual, a fonte confiavel para esse rastreamento passa a ser o log da Vercel
+- para saber o inscrito final dentro do Google Forms, ainda seria necessario um campo de origem no proprio formulario
+
 ## Publicar em um novo repositório
 
 ```bash
