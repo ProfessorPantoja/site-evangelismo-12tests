@@ -42,6 +42,20 @@ Resumo:
 - Criado documento de decisao focado no caminho do usuario, gargalos do formulario e recomendacoes de ordem pratica.
 - Adicionado rewrite para tornar `/qr` uma rota publica valida na Vercel, sem expor `/api/qr` na arte do cartaz.
 
+5. Consolidacao em arquivo do conteudo atual do Google Forms.
+Arquivos alterados:
+- `winner-site/FORMULARIO_ATUAL.md`
+Resumo:
+- Conteudo do formulario transcrito a partir da captura em `assets`, para consulta rapida sem depender do login Google.
+
+6. Padronizacao do nome dos arquivos de captura do formulario.
+Arquivos alterados:
+- `assets/formulario-inscricao-atual.png`
+- `assets/formulario-inscricao-atual.pdf`
+- `winner-site/FORMULARIO_ATUAL.md`
+Resumo:
+- Capturas do Google Forms renomeadas para nomes curtos e claros, facilitando consulta e manutencao.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
