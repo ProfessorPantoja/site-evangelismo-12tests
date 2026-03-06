@@ -68,7 +68,7 @@
         <!-- ===== HERO ===== -->
         <section class="hero" aria-labelledby="hero-title">
             <video class="hero__video-mobile" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-                <source src="assets/Video/Cruz1.mp4" type="video/mp4">
+                <source src="assets/Video/Cruz1-optimized.mp4" type="video/mp4">
             </video>
             <div class="hero__bg" aria-hidden="true"></div>
             <div class="hero__content">
@@ -344,8 +344,11 @@
 
                 <div class="speaker-card reveal">
                     <div class="speaker-card__photo-wrap">
-                        <img src="assets/v1/pastor.png" alt="Pr. Marcus Silva" class="speaker-card__photo"
-                            loading="lazy">
+                        <picture>
+                            <source srcset="assets/v1/pastor.webp" type="image/webp">
+                            <img src="assets/v1/pastor.png" alt="Pr. Marcus Silva" class="speaker-card__photo"
+                                loading="lazy" width="800" height="1200">
+                        </picture>
                     </div>
                     <h3 class="speaker-card__name">Pr. Marcus Silva</h3>
                     <p class="speaker-card__role">Pastor Missionário · Missiólogo · Capelão</p>

@@ -20,6 +20,20 @@ python3 -m http.server 4301
 
 Abrir: `http://localhost:4301`
 
+## Otimizar midia em um clique
+
+```bash
+cd winner-site
+./scripts/optimize-media.sh
+```
+
+O script gera:
+
+- `assets/v1/hero.webp`
+- `assets/v1/biblia.webp`
+- `assets/v1/pastor.webp`
+- `assets/Video/Cruz1-optimized.mp4`
+
 ## Publicar em um novo repositório
 
 ```bash

@@ -1,5 +1,18 @@
 # Registro de Alteracoes - Winner Site
 
+## 2026-03-06
+
+1. Pipeline local de otimizacao de midia em um clique.
+Arquivos alterados:
+- `winner-site/scripts/optimize-media.sh`
+- `winner-site/index.html`
+- `winner-site/style.css`
+- `winner-site/README.md`
+Resumo:
+- Criado script local baseado em `ffmpeg` para converter imagens fotograficas em `webp` e gerar um MP4 otimizado para mobile.
+- Landing ajustada para usar `hero.webp`, `biblia.webp`, `pastor.webp` e `Cruz1-optimized.mp4`, com fallback em `png` para a foto do ministrante.
+- Objetivo: reduzir o peso inicial da pagina sem depender de ferramentas externas.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.

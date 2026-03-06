@@ -97,7 +97,7 @@ body {
     font-family: var(--font-body);
     background:
         linear-gradient(rgba(12, 21, 44, 0.84), rgba(12, 21, 44, 0.9)),
-        url("assets/v1/hero.png") center/cover fixed no-repeat,
+        url("assets/v1/hero.webp") center/cover fixed no-repeat,
         var(--bg-primary);
     color: var(--fg-primary);
     line-height: 1.7;
@@ -365,7 +365,7 @@ a:focus-visible {
     border-radius: var(--radius-md);
     background:
         linear-gradient(140deg, rgba(11, 15, 26, 0.5), rgba(11, 15, 26, 0.8)),
-        url("assets/v1/biblia.png") center/cover no-repeat;
+        url("assets/v1/biblia.webp") center/cover no-repeat;
     color: #ffe8c2;
     font-family: var(--font-mono);
     font-size: 0.64rem;
