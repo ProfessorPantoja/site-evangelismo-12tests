@@ -13,6 +13,13 @@ Resumo:
 - Landing ajustada para usar `hero.webp`, `biblia.webp`, `pastor.webp` e `Cruz1-optimized.mp4`, com fallback em `png` para a foto do ministrante.
 - Objetivo: reduzir o peso inicial da pagina sem depender de ferramentas externas.
 
+2. Alerta sonoro local para conclusao de tarefas no ambiente de trabalho.
+Arquivos alterados:
+- `scripts/task-done.sh`
+Resumo:
+- Criado script raiz para tocar um som de conclusao mais perceptivel ao fim das tarefas.
+- Prioridade para `~/sounds/done.wav` quando existir, com fallback para sons do Linux Mint via `paplay` ou `canberra-gtk-play`.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
