@@ -1014,6 +1014,11 @@ a:focus-visible {
     margin-right: auto;
 }
 
+.cta-banner__button {
+    min-width: min(100%, 21rem);
+    white-space: nowrap;
+}
+
 /* --- Footer --- */
 .footer {
     background: var(--surface);
@@ -1180,6 +1185,18 @@ a:focus-visible {
 
     .navbar__cta svg {
         display: none;
+    }
+
+    .cta-banner__button {
+        width: 100%;
+        max-width: 19rem;
+        padding: 1rem 1.25rem;
+        font-size: 0.84rem;
+        letter-spacing: 0.04em;
+    }
+
+    .cta-banner__button svg {
+        flex-shrink: 0;
     }
 }
 

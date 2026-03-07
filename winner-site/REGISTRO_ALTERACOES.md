@@ -120,6 +120,19 @@ Resumo:
 - Metadados Open Graph e Twitter Card configurados para melhorar preview no WhatsApp e redes sociais.
 - Usada como imagem principal de compartilhamento a arte hero do evento, em vez da logo isolada.
 
+14. Pendencias de Pix e WhatsApp substituidas por informacoes finais no site.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Bloco de pagamento atualizado para informar que a chave Pix esta no formulario de inscricao, com link sutil para o form.
+- Placeholder do WhatsApp oficial removido e substituido pelo numero `(21) 97733-6783`.
+
+15. FAQ atualizada para responder de forma direta sobre alimentacao inclusa.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Adicionada pergunta especifica na FAQ informando que o investimento inclui cafe da manha, almoco, lanche da tarde e certificado.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
