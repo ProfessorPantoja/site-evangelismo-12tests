@@ -133,6 +133,15 @@ Arquivos alterados:
 Resumo:
 - Adicionada pergunta especifica na FAQ informando que o investimento inclui cafe da manha, almoco, lanche da tarde e certificado.
 
+16. Ajustes finos de clareza no site para mobile e localizacao.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/style.css`
+Resumo:
+- Removido o texto "Nao obrigatorio" do bloco de comprovante.
+- CTA intermediaria de inscricao refinada para mobile, evitando quebra estranha do botao.
+- Frase sobre ausencia de estacionamento destacada com mais espaco visual na secao "Como Chegar".
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
