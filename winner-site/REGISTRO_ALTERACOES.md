@@ -94,6 +94,20 @@ Arquivos alterados:
 Resumo:
 - Removido o destaque vermelho do texto "NÃO TEM estacionamento no local", mantendo a mensagem com o mesmo peso do restante da informacao.
 
+12. Organizacao da pasta raiz `assets`.
+Arquivos alterados:
+- `assets/favicons/favicon-16.png`
+- `assets/favicons/favicon-32.png`
+- `assets/favicons/favicon-48.png`
+- `assets/favicons/favicon.ico`
+- `assets/formularios/formulario-inscricao-atual.png`
+- `assets/formularios/formulario-inscricao-atual.pdf`
+- `winner-site/FORMULARIO_ATUAL.md`
+Resumo:
+- Favicons agrupados em `assets/favicons/`.
+- Capturas do formulario agrupadas em `assets/formularios/`.
+- Referencias documentais ajustadas para os novos caminhos.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.

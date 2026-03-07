@@ -2,8 +2,8 @@
 
 Fonte usada para este resumo:
 
-- `assets/formulario-inscricao-atual.png`
-- `assets/formulario-inscricao-atual.pdf`
+- `assets/formularios/formulario-inscricao-atual.png`
+- `assets/formularios/formulario-inscricao-atual.pdf`
 - transcricao manual enviada pelo usuario em 2026-03-06
 
 Observacao:
