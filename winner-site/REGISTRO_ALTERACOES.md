@@ -108,6 +108,18 @@ Resumo:
 - Capturas do formulario agrupadas em `assets/formularios/`.
 - Referencias documentais ajustadas para os novos caminhos.
 
+13. Favicons e metadados de compartilhamento configurados na landing vencedora.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/assets/favicons/favicon-16.png`
+- `winner-site/assets/favicons/favicon-32.png`
+- `winner-site/assets/favicons/favicon-48.png`
+- `winner-site/assets/og/og-evento.jpg`
+Resumo:
+- Favicons adicionados dentro da pasta publicada da `winner-site`.
+- Metadados Open Graph e Twitter Card configurados para melhorar preview no WhatsApp e redes sociais.
+- Usada como imagem principal de compartilhamento a arte hero do evento, em vez da logo isolada.
+
 ## 2026-03-01
 
 1. Inclusao da foto e resumo do curriculo pastoral do ministrante.
