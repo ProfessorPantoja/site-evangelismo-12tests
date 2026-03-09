@@ -1,5 +1,21 @@
 # Registro de Alteracoes - Winner Site
 
+## 2026-03-09
+
+1. Requisito adicional da inscricao destacado no bloco de investimento.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/style.css`
+- `winner-site/REGISTRO_ALTERACOES.md`
+Resumo:
+- Adicionado aviso proprio na secao `Vagas e Pagamento` informando que, alem do valor de R$ 20,00, cada participante deve levar 1 kg de alimento nao perecivel no dia do evento.
+- Mensagem reforcada tambem na FAQ, no ponto em que o usuario consulta valor e forma de pagamento.
+- Requisito do alimento tambem promovido para o hero em formato de selo destacado com icone, para ficar visivel ja na primeira dobra.
+- Requisito repetido tambem em `Informacoes do Evento` e no bloco `Garanta Sua Vaga`, com textos curtos para manter clareza ao longo da pagina.
+- Texto do pagamento em dinheiro refinado para orientar preferencia por Pix com fallback manual.
+- Linha `Lider de evangelizacao: atualmente nao ha` movida do rodape inferior para a lista de `Lideranca`.
+- Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.
+
 ## 2026-03-06
 
 1. Pipeline local de otimizacao de midia em um clique.

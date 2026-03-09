@@ -460,6 +460,19 @@ a:focus-visible {
     color: var(--fg-secondary);
 }
 
+.hero__meta-item--highlight {
+    width: fit-content;
+    max-width: 100%;
+    margin-top: calc(var(--space-2) * -0.5);
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid rgba(212, 168, 83, 0.22);
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, rgba(212, 168, 83, 0.12), rgba(10, 14, 26, 0.28));
+    color: #f3d9a3;
+    font-size: 0.86rem;
+    letter-spacing: 0.01em;
+}
+
 .hero__meta-item svg {
     width: 20px;
     height: 20px;
@@ -849,6 +862,17 @@ a:focus-visible {
     margin-bottom: var(--space-6);
 }
 
+.registration-box__alert {
+    margin-bottom: var(--space-6);
+    padding: var(--space-4) var(--space-5);
+    background: linear-gradient(135deg, rgba(212, 168, 83, 0.12), rgba(199, 122, 60, 0.08));
+    border: 1px solid rgba(212, 168, 83, 0.18);
+    border-radius: var(--radius-md);
+    color: var(--fg-primary);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
 .registration-box__list {
     list-style: none;
     margin-bottom: var(--space-6);
@@ -1019,6 +1043,17 @@ a:focus-visible {
     max-width: 50ch;
     margin-left: auto;
     margin-right: auto;
+}
+
+.cta-banner__note {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-4);
+    padding: 0.15rem 0.5rem;
+    color: #36dfd0;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .cta-banner__button {
@@ -1204,6 +1239,26 @@ a:focus-visible {
 
     .cta-banner__button svg {
         flex-shrink: 0;
+    }
+
+    .cta-banner__note {
+        font-size: 0.88rem;
+        padding: 0;
+    }
+
+    .hero__meta {
+        gap: var(--space-3);
+    }
+
+    .hero__meta-item {
+        font-size: 0.84rem;
+    }
+
+    .hero__meta-item--highlight {
+        justify-content: center;
+        padding: var(--space-2) var(--space-3);
+        font-size: 0.8rem;
+        line-height: 1.4;
     }
 }
 
