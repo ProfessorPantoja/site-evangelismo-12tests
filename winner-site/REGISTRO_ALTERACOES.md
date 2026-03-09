@@ -12,6 +12,7 @@ Resumo:
 - Mensagem reforcada tambem na FAQ, no ponto em que o usuario consulta valor e forma de pagamento.
 - Requisito do alimento tambem promovido para o hero em formato de selo destacado com icone, para ficar visivel ja na primeira dobra.
 - Requisito repetido tambem em `Informacoes do Evento` e no bloco `Garanta Sua Vaga`, com textos curtos para manter clareza ao longo da pagina.
+- Texto da contribuicao ajustado para deixar explicito que o quilo deve ser entregue no dia do evento.
 - Texto do pagamento em dinheiro refinado para orientar preferencia por Pix com fallback manual.
 - Linha `Lider de evangelizacao: atualmente nao ha` movida do rodape inferior para a lista de `Lideranca`.
 - Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.
