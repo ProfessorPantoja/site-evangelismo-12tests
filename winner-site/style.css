@@ -826,6 +826,71 @@ a:focus-visible {
     color: var(--fg-secondary);
 }
 
+.teaching-outline {
+    margin-top: var(--space-8);
+    padding-top: var(--space-7);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: left;
+}
+
+.teaching-outline__intro {
+    margin-bottom: var(--space-6);
+}
+
+.teaching-outline__eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent-gold);
+    margin-bottom: var(--space-2);
+}
+
+.teaching-outline__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--fg-primary);
+    margin-bottom: var(--space-3);
+    line-height: 1.2;
+}
+
+.teaching-outline__text {
+    font-size: 0.95rem;
+    color: var(--fg-secondary);
+    line-height: 1.7;
+    max-width: 60ch;
+}
+
+.teaching-outline__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+.teaching-topic {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(212, 168, 83, 0.05));
+    border: 1px solid rgba(212, 168, 83, 0.12);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.teaching-topic__title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--fg-primary);
+    margin-bottom: var(--space-2);
+    line-height: 1.3;
+}
+
+.teaching-topic__text {
+    font-size: 0.9rem;
+    color: var(--fg-secondary);
+    line-height: 1.7;
+}
+
 /* --- Registration / Payment Section --- */
 .registration-grid {
     display: grid;
@@ -1276,6 +1341,10 @@ a:focus-visible {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .teaching-outline__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .footer__grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1301,6 +1370,10 @@ a:focus-visible {
 
     .info-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teaching-outline__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .map-wrapper iframe {

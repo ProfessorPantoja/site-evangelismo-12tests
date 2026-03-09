@@ -15,6 +15,8 @@ Resumo:
 - Texto da contribuicao ajustado para deixar explicito que o quilo deve ser entregue no dia do evento.
 - Texto do pagamento em dinheiro refinado para orientar preferencia por Pix com fallback manual.
 - Linha `Lider de evangelizacao: atualmente nao ha` movida do rodape inferior para a lista de `Lideranca`.
+- Secao nova abaixo do ministrante passou a resumir, em linguagem curada para landing page, os principais eixos do treinamento de evangelizacao.
+- Texto dessa secao foi reaproximado da voz pastoral original, preservando termos-chave como `amor pelas almas`, `batalha espiritual na evangelizacao`, `como sair de situacoes inusitadas`, `falso evangelho`, `sob a uncao do Espirito Santo` e `evangelizacao para toda a igreja`.
 - Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.
 
 ## 2026-03-06
