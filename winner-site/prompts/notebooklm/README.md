@@ -17,6 +17,12 @@ Esta pasta guarda prompts reutilizaveis para geracao de infograficos e outras pe
 4. Gerar a arte no NotebookLM.
 5. Se o resultado ficar bom, salvar um novo par `GUIA + FONTE` com nome claro.
 
+## Estrategia atual
+
+- `V1`: organizacao inicial do conteudo
+- `V2`: reforco tematico para `O CAMPO E O MUNDO`
+- `V3`: fusao entre a estrutura limpa do infografico e a atmosfera visual do hero do site
+
 ## Convencao de nomes
 
 - `GUIA_INFOGRAFICO_<tema>.md`

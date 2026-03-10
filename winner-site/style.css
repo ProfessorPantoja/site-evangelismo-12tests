@@ -406,6 +406,7 @@ a:focus-visible {
     padding: var(--space-2) var(--space-5);
     border-radius: var(--radius-full);
     margin-bottom: var(--space-8);
+    line-height: 1.2;
 }
 
 .hero__title {
@@ -1277,6 +1278,14 @@ a:focus-visible {
 }
 
 @media (max-width: 520px) {
+    .hero__label {
+        font-size: 0.66rem;
+        letter-spacing: 0.12em;
+        padding: 0.52rem 0.95rem;
+        margin-bottom: var(--space-6);
+        white-space: nowrap;
+    }
+
     .navbar {
         padding: var(--space-3) var(--space-3);
         min-height: 64px;

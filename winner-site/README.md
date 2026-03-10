@@ -100,3 +100,8 @@ Versionamento sugerido:
 
 - manter a base aprovada
 - criar variantes como `V2`, `V3` quando houver melhoria real
+
+Estrategia atual:
+
+- `V2`: tema `O CAMPO E O MUNDO` mais dominante
+- `V3`: fusao entre a atmosfera do hero do site e a estrutura limpa do infografico
