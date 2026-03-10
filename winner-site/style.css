@@ -1430,10 +1430,17 @@ a:focus-visible {
     .schedule-item {
         flex-direction: column;
         align-items: flex-start;
+        gap: var(--space-1);
+        padding-top: var(--space-4);
+    }
+
+    .schedule-item:first-child {
+        padding-top: 0;
     }
 
     .schedule-item__time {
         white-space: normal;
+        font-size: 0.9rem;
     }
 }
 
