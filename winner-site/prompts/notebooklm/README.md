@@ -23,6 +23,15 @@ Esta pasta guarda prompts reutilizaveis para geracao de infograficos e outras pe
 - `FONTE_INFOGRAFICO_<tema>.md`
 - `TEMPLATE_INFOGRAFICO_<uso>.md`
 
+## Versionamento
+
+Quando uma variacao melhorar o resultado sem invalidar a anterior, crie nova versao:
+
+- `..._V2.md`
+- `..._V3.md`
+
+Assim fica facil comparar o que funcionou melhor.
+
 ## Regra importante
 
 Quando uma arte aprovada tiver um tema biblico central, esse tema deve aparecer:

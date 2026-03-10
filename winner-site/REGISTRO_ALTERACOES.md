@@ -20,6 +20,7 @@ Resumo:
 - Criada biblioteca local de prompts em `winner-site/prompts/notebooklm/`, separando `GUIA`, `FONTE` e `TEMPLATE` para reaproveitamento futuro das artes geradas no NotebookLM.
 - Adicionado checklist de avaliacao para decidir o que realmente vale reaproveitar em futuras geracoes.
 - Guia do infografico passou a reforcar explicitamente o tema `O CAMPO E O MUNDO` como eixo criativo e conceitual.
+- Criadas versoes `V2` de `GUIA` e `FONTE` para o NotebookLM, com foco maior em deixar `O CAMPO E O MUNDO` como tema dominante da peca e em aproximar o tom da realidade local do evento.
 - Hero recebeu destaque proprio para o tema `O Campo e o Mundo`, deixando a mensagem visivel como tema oficial do evento e nao apenas dentro do versiculo.
 - Foto do ministrante passou a usar `img` direta com fallback automatico para `png`, reduzindo chance de quebra visual em servidores locais ou navegadores com falha no `webp`.
 - Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.

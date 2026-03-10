@@ -95,3 +95,8 @@ Padrao adotado:
 - `FONTE_*.md`: conteudo bruto
 - `TEMPLATE_*.md`: base para novas variacoes
 - `CHECKLIST_*.md`: criterio para avaliar resultados aprovados
+
+Versionamento sugerido:
+
+- manter a base aprovada
+- criar variantes como `V2`, `V3` quando houver melhoria real
