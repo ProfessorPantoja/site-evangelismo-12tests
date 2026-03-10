@@ -22,6 +22,8 @@ Resumo:
 - Guia do infografico passou a reforcar explicitamente o tema `O CAMPO E O MUNDO` como eixo criativo e conceitual.
 - Criadas versoes `V2` de `GUIA` e `FONTE` para o NotebookLM, com foco maior em deixar `O CAMPO E O MUNDO` como tema dominante da peca e em aproximar o tom da realidade local do evento.
 - Hero recebeu destaque proprio para o tema `O Campo e o Mundo`, deixando a mensagem visivel como tema oficial do evento e nao apenas dentro do versiculo.
+- Badge superior do hero foi compactado no mobile, trocando `Rio de Janeiro` por `RJ` e reduzindo tracking/padding para eliminar altura excessiva.
+- Selo do hero sobre alimento foi refinado para `Traga tambem 1 kg de alimento nao perecivel`, reforcando melhor a ideia de item adicional.
 - Foto do ministrante passou a usar `img` direta com fallback automatico para `png`, reduzindo chance de quebra visual em servidores locais ou navegadores com falha no `webp`.
 - Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.
 
