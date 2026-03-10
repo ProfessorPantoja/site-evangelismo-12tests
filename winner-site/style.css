@@ -511,7 +511,7 @@ a:focus-visible {
     position: relative;
     z-index: 3;
     margin-top: calc(var(--space-12) * -1);
-    padding: 0 0 var(--space-8);
+    padding: 0 0 var(--space-10);
 }
 
 .institutional-signature__card {
@@ -1405,10 +1405,12 @@ a:focus-visible {
 
     .institutional-signature {
         margin-top: calc(var(--space-8) * -1);
+        padding-bottom: var(--space-8);
     }
 
     .institutional-signature__card {
-        padding: var(--space-5);
+        width: min(100%, 40rem);
+        padding: var(--space-6);
     }
 }
 
@@ -1495,24 +1497,35 @@ a:focus-visible {
 
     .institutional-signature {
         margin-top: calc(var(--space-6) * -1);
-        padding-bottom: var(--space-6);
+        padding-bottom: var(--space-8);
+    }
+
+    .institutional-signature .container {
+        padding-left: var(--space-6);
+        padding-right: var(--space-6);
     }
 
     .institutional-signature__card {
         flex-direction: column;
-        gap: var(--space-4);
+        gap: var(--space-5);
         text-align: center;
-        padding: var(--space-5) var(--space-4);
+        width: 100%;
+        padding: var(--space-6) var(--space-5);
     }
 
     .institutional-signature__logo {
-        width: 76px;
-        height: 76px;
+        width: 82px;
+        height: 82px;
         border-radius: 20px;
     }
 
     .institutional-signature__eyebrow {
+        margin-bottom: var(--space-3);
         letter-spacing: 0.12em;
+    }
+
+    .institutional-signature__name {
+        line-height: 1.28;
     }
 
     .schedule-item {
