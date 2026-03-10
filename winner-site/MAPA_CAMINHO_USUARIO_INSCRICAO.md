@@ -14,7 +14,6 @@ Evidencias:
 - Auditoria anterior ja havia sinalizado risco de redirecionamento para `accounts.google.com`.
 - Cadeia atual observada:
   - `https://admpf-evangelismo-2026.vercel.app/api/track-register?...`
-  - `https://bit.ly/admpf-evento-evangelismo-2026?...`
   - `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
   - resposta final `401`
 
@@ -35,17 +34,17 @@ Estado atual:
 - O `bit.ly` nao e mais necessario para rastreamento principal, porque:
   - ja existe log tecnico na Vercel para QR e clique em inscricao
   - futuramente o GA4 pode cobrir aquisicao e trafego
+  - o fluxo atual ja foi simplificado para redirecionamento direto ao Google Forms
 
-Problema atual:
+Problema anterior:
 
-- O `bit.ly` adiciona uma camada a mais na jornada.
-- Pode acionar tela intermediaria de confirmacao.
-- Aumenta desconfiança e adiciona atrito antes do Google Forms.
+- O `bit.ly` adicionava uma camada a mais na jornada.
+- Podia acionar tela intermediaria de confirmacao.
+- Aumentava desconfiança e atrito antes do Google Forms.
 
-Decisao recomendada:
+Decisao aplicada:
 
-- Remover o `bit.ly` assim que existir uma URL final de formulario publico e validado sem login.
-- Manter o endpoint de rastreamento (`/qr` e `/api/track-register`) e trocar apenas o destino final.
+- Manter o endpoint de rastreamento (`/qr` e `/api/track-register`) e usar destino direto para o Google Forms.
 
 ## Caminho atual do usuario
 
@@ -63,7 +62,6 @@ Decisao recomendada:
 5. Usuario clica em inscricao.
 6. Passa por:
    - endpoint de rastreamento
-   - `bit.ly`
    - Google Forms
 7. Se conseguir abrir o formulario:
    - preenche dados
@@ -82,8 +80,8 @@ Decisao recomendada:
 
 ### No clique
 
-- Redirecionamento adicional pelo `bit.ly`.
-- Possivel percepcao de link encurtado como menos confiavel.
+- O redirecionamento intermediario por `bit.ly` foi removido.
+- O clique agora ficou mais previsivel, mas o bloqueio por login Google continua sendo o principal atrito.
 
 ### No formulario
 
@@ -164,7 +162,7 @@ Decisao recomendada:
 ## Recomendacao pratica de ordem
 
 1. Validar formulario publico sem login em navegacao anonima.
-2. Remover `bit.ly` assim que a URL final estiver pronta.
+2. Manter `bit.ly` fora do fluxo.
 3. Preencher no site:
    - chave Pix
    - favorecido
@@ -175,5 +173,5 @@ Decisao recomendada:
 ## Resposta curta para decisao
 
 - Login Google: hoje deve ser tratado como risco real e possivel barreira.
-- `bit.ly`: hoje atrapalha mais do que ajuda.
+- `bit.ly`: ja foi removido do fluxo.
 - Foco imediato: limpar o caminho do usuario ate "sua inscricao foi recebida/confirmada".

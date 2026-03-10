@@ -1,5 +1,5 @@
 export const SITE_ORIGIN = 'https://admpf-evangelismo-2026.vercel.app';
-export const REGISTRATION_URL = 'https://bit.ly/admpf-evento-evangelismo-2026';
+export const REGISTRATION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor';
 export const DEFAULT_CAMPAIGN = 'conscientizacao_evangelistica_2026';
 
 const TRACKING_KEYS = [

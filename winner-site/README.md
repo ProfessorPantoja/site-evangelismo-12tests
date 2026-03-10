@@ -59,7 +59,7 @@ Fluxo configurado:
 Observacao:
 
 - isso rastreia visitas do QR e cliques em inscricao sem depender de Google Analytics
-- com o `bit.ly` atual, a fonte confiavel para esse rastreamento passa a ser o log da Vercel
+- o `bit.ly` foi removido do fluxo; o endpoint de rastreamento agora redireciona direto para o Google Forms
 - para saber o inscrito final dentro do Google Forms, ainda seria necessario um campo de origem no proprio formulario
 
 ## Publicar em um novo repositório
