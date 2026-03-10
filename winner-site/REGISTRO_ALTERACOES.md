@@ -21,6 +21,7 @@ Resumo:
 - Adicionado checklist de avaliacao para decidir o que realmente vale reaproveitar em futuras geracoes.
 - Guia do infografico passou a reforcar explicitamente o tema `O CAMPO E O MUNDO` como eixo criativo e conceitual.
 - Hero recebeu destaque proprio para o tema `O Campo e o Mundo`, deixando a mensagem visivel como tema oficial do evento e nao apenas dentro do versiculo.
+- Foto do ministrante passou a usar `img` direta com fallback automatico para `png`, reduzindo chance de quebra visual em servidores locais ou navegadores com falha no `webp`.
 - Removida a mencao ao Diacono Marcos dos trechos de idealizacao exibidos no site.
 
 ## 2026-03-06
