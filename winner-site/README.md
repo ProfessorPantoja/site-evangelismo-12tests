@@ -7,6 +7,7 @@ Esta pasta contém a landing vencedora, isolada e pronta para um repositório pr
 - `index.html`
 - `style.css`
 - `script.js`
+- `prompts/notebooklm/`
 - `assets/v1/hero.png`
 - `assets/v1/biblia.png`
 - `assets/Video/Cruz1.mp4`
@@ -79,3 +80,18 @@ git push -u origin main
 cd winner-site
 npx -y vercel --prod
 ```
+
+## Biblioteca de prompts
+
+Prompts reutilizaveis para o NotebookLM ficam em:
+
+```text
+winner-site/prompts/notebooklm/
+```
+
+Padrao adotado:
+
+- `GUIA_*.md`: direcao criativa
+- `FONTE_*.md`: conteudo bruto
+- `TEMPLATE_*.md`: base para novas variacoes
+- `CHECKLIST_*.md`: criterio para avaliar resultados aprovados
