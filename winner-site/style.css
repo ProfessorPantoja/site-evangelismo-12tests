@@ -517,7 +517,8 @@ a:focus-visible {
 .institutional-signature__card {
     width: min(100%, 760px);
     margin: 0 auto;
-    padding: var(--space-5) var(--space-6);
+    min-height: 260px;
+    padding: var(--space-8) var(--space-6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1398,7 +1399,8 @@ a:focus-visible {
 
     .institutional-signature__card {
         width: min(100%, 40rem);
-        padding: var(--space-6);
+        min-height: 248px;
+        padding: var(--space-7) var(--space-6);
     }
 }
 
@@ -1498,7 +1500,8 @@ a:focus-visible {
         gap: var(--space-5);
         text-align: center;
         width: 100%;
-        padding: var(--space-6) var(--space-5);
+        min-height: 232px;
+        padding: var(--space-7) var(--space-5);
     }
 
     .institutional-signature__logo {
