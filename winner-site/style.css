@@ -354,27 +354,7 @@ a:focus-visible {
 }
 
 .hero::after {
-    content: "PLACEHOLDER DE IMAGEM ESTRATEGICA";
-    position: absolute;
-    right: var(--space-5);
-    bottom: var(--space-5);
-    width: min(42vw, 280px);
-    min-height: 94px;
-    padding: var(--space-3) var(--space-4);
-    border: 2px dashed rgba(212, 168, 83, 0.45);
-    border-radius: var(--radius-md);
-    background:
-        linear-gradient(140deg, rgba(11, 15, 26, 0.5), rgba(11, 15, 26, 0.8)),
-        url("assets/v1/biblia.webp") center/cover no-repeat;
-    color: #ffe8c2;
-    font-family: var(--font-mono);
-    font-size: 0.64rem;
-    letter-spacing: 0.08em;
-    text-align: center;
-    display: grid;
-    place-items: center;
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
 .hero__bg {
@@ -523,7 +503,7 @@ a:focus-visible {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--space-5);
+    gap: var(--space-3);
     background: linear-gradient(135deg, rgba(10, 14, 26, 0.92), rgba(15, 20, 41, 0.9));
     border: 1px solid rgba(212, 168, 83, 0.2);
     border-radius: var(--radius-xl);
@@ -545,12 +525,24 @@ a:focus-visible {
     box-shadow: var(--shadow-sm);
 }
 
+.institutional-signature__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: none;
+    color: rgba(232, 198, 106, 0.9);
+    margin-top: var(--space-2);
+}
+
 .institutional-signature__name {
     font-family: var(--font-display);
-    font-size: clamp(1.2rem, 2.6vw, 1.8rem);
-    line-height: 1.28;
+    font-size: clamp(1.32rem, 2.8vw, 2rem);
+    line-height: 1.18;
+    letter-spacing: -0.01em;
     color: var(--fg-primary);
-    max-width: 18ch;
+    max-width: 20ch;
+    text-wrap: balance;
 }
 
 /* --- Buttons --- */
@@ -879,7 +871,7 @@ a:focus-visible {
     border-radius: var(--radius-xl);
     padding: var(--space-10);
     text-align: center;
-    max-width: 650px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
