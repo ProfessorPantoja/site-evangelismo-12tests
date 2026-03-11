@@ -59,7 +59,8 @@ Fluxo configurado:
 Observacao:
 
 - isso rastreia visitas do QR e cliques em inscricao sem depender de Google Analytics
-- o `bit.ly` foi removido do fluxo; o endpoint de rastreamento agora redireciona direto para o Google Forms
+- o endpoint de rastreamento redireciona direto para o Google Forms
+- link direto atual do formulario: `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
 - para saber o inscrito final dentro do Google Forms, ainda seria necessario um campo de origem no proprio formulario
 
 ## Publicar em um novo repositório

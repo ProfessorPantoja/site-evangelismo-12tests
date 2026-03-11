@@ -27,20 +27,17 @@ Decisao recomendada:
 - Confirmar e, se necessario, reconfigurar o Google Forms para aceitar respostas sem login.
 - Nao divulgar em massa enquanto essa parte nao estiver validada em navegacao anonima real.
 
-### 2. Permanecer no bit.ly?
+### 2. Link direto para o formulario
 
 Estado atual:
 
-- O `bit.ly` nao e mais necessario para rastreamento principal, porque:
-  - ja existe log tecnico na Vercel para QR e clique em inscricao
-  - futuramente o GA4 pode cobrir aquisicao e trafego
-  - o fluxo atual ja foi simplificado para redirecionamento direto ao Google Forms
+- Ja existe log tecnico na Vercel para QR e clique em inscricao
+- Futuramente o GA4 pode cobrir aquisicao e trafego
+- O fluxo atual ja foi simplificado para redirecionamento direto ao Google Forms
 
-Problema anterior:
+Destino atual:
 
-- O `bit.ly` adicionava uma camada a mais na jornada.
-- Podia acionar tela intermediaria de confirmacao.
-- Aumentava desconfiança e atrito antes do Google Forms.
+- `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
 
 Decisao aplicada:
 
@@ -80,7 +77,6 @@ Decisao aplicada:
 
 ### No clique
 
-- O redirecionamento intermediario por `bit.ly` foi removido.
 - O clique agora ficou mais previsivel, mas o bloqueio por login Google continua sendo o principal atrito.
 
 ### No formulario
@@ -135,7 +131,7 @@ Decisao aplicada:
    - comprovante
    - regra de confirmacao
 5. Clica em inscricao.
-6. Vai direto para um formulario publico, sem `bit.ly`, sem login obrigatorio.
+6. Vai direto para um formulario publico, sem intermediario, sem login obrigatorio.
 7. Envia.
 8. Ve uma mensagem final objetiva:
    - inscricao recebida
@@ -162,7 +158,7 @@ Decisao aplicada:
 ## Recomendacao pratica de ordem
 
 1. Validar formulario publico sem login em navegacao anonima.
-2. Manter `bit.ly` fora do fluxo.
+2. Manter o link direto para o Google Forms.
 3. Preencher no site:
    - chave Pix
    - favorecido
@@ -173,5 +169,5 @@ Decisao aplicada:
 ## Resposta curta para decisao
 
 - Login Google: hoje deve ser tratado como risco real e possivel barreira.
-- `bit.ly`: ja foi removido do fluxo.
+- Link do formulario: direto para o Google Forms.
 - Foco imediato: limpar o caminho do usuario ate "sua inscricao foi recebida/confirmada".

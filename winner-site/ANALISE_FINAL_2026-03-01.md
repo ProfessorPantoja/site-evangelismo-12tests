@@ -34,8 +34,7 @@ Métricas-chave:
 
 ### 1) Link de inscrição com risco de fricção (Crítico)
 
-O CTA principal usa `bit.ly` em múltiplos pontos.  
-Na checagem automatizada sem sessão autenticada, o destino final caiu em `accounts.google.com` (login), o que pode bloquear ou confundir novos visitantes.
+Na checagem automatizada sem sessão autenticada, o fluxo de inscrição caiu em `accounts.google.com` (login), o que pode bloquear ou confundir novos visitantes.
 
 Impacto:
 - Pode reduzir conversão diretamente.

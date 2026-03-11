@@ -11,7 +11,6 @@ Status: aprovado
 Observacao:
 
 - Este arquivo registra o conteudo e a estrutura aprovados do formulario.
-- Melhorias futuras, como validacoes por expressoes regulares, ficaram para outra etapa.
 
 ## Resumo executivo
 
@@ -170,12 +169,3 @@ O formulario aprovado ficou assim:
 - contato da Diaconisa Marcia no formulario
 - pergunta de autorizacao de imagem
 - pergunta sobre como a pessoa ficou sabendo do evento
-
-## Proxima etapa futura
-
-Quando for a hora de lapidar:
-
-- adicionar validacoes com expressoes regulares
-- revisar obrigatoriedade e formato de telefone
-- revisar padrao de nome completo
-- revisar consistencia entre obrigatorio e opcional em cada campo
