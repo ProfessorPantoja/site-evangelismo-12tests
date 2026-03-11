@@ -1,5 +1,65 @@
 # Registro de Alteracoes - Winner Site
 
+## 2026-03-10
+
+1. Fluxo de inscricao simplificado para link direto do Google Forms.
+Arquivos alterados:
+- `winner-site/api/_lib/attribution.mjs`
+- `winner-site/README.md`
+- `winner-site/MAPA_CAMINHO_USUARIO_INSCRICAO.md`
+- `winner-site/ANALISE_FINAL_2026-03-01.md`
+Resumo:
+- Removido o intermediario por `bit.ly`.
+- Endpoint de rastreamento passou a redirecionar direto para a URL final do Google Forms.
+- Documentacao operacional e analitica atualizada para refletir o fluxo direto.
+
+2. Compatibilidade do CTA de inscricao com preview local.
+Arquivos alterados:
+- `winner-site/script.js`
+Resumo:
+- Em ambiente local (`localhost` / `127.0.0.1`), os CTAs de inscricao passaram a apontar para o endpoint publicado da Vercel.
+- Isso evita o erro `Cannot GET /api/track-register` ao abrir a landing por servidor estatico local.
+
+3. Registro consolidado do formulario aprovado.
+Arquivos alterados:
+- `winner-site/FORMULARIO_ATUAL.md`
+- `winner-site/assets/form.pdf`
+- `winner-site/assets/Form.png`
+Resumo:
+- Reescrito o documento do formulario com base na versao final aprovada.
+- Estrutura, campos, texto de confirmacao, chave Pix e fluxo final ficaram registrados em Markdown para consulta futura.
+
+4. Google Analytics instalado e publicado.
+Arquivos alterados:
+- `winner-site/index.html`
+Resumo:
+- Integrado `gtag.js` com o ID `G-5KXSSBWQH3`.
+- Site republicado apos a instalacao para iniciar coleta de dados em producao.
+
+5. Bloco institucional abaixo do hero criado e refinado.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/style.css`
+Resumo:
+- Adicionada assinatura institucional com logo da igreja abaixo do hero.
+- Layout ajustado em varias iteracoes: centralizacao, proporcao mais quadrada, mais respiro interno e linha de apoio acima do nome.
+
+6. Ajustes visuais finais no hero e na secao do ministrante.
+Arquivos alterados:
+- `winner-site/style.css`
+Resumo:
+- Removido o placeholder visual restante no desktop.
+- Card do ministrante alargado para ficar mais proporcional ao restante da landing.
+
+7. Publicacao final em Git e Vercel apos os ajustes visuais.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/style.css`
+- `winner-site/REGISTRO_ALTERACOES.md`
+Resumo:
+- Alteracoes finais commitadas, enviadas ao GitHub e publicadas na Vercel.
+- Sequencia operacional consolidada como `CPD` (`Commit -> Push -> Deploy`).
+
 ## 2026-03-09
 
 1. Requisito adicional da inscricao destacado no bloco de investimento.
