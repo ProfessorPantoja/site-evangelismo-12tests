@@ -1,22 +1,31 @@
 # Formulario Atual - Google Forms
 
-Fonte usada para este resumo:
+Data de consolidacao: 2026-03-10
+Status: aprovado
 
-- `assets/formularios/formulario-inscricao-atual.png`
-- `assets/formularios/formulario-inscricao-atual.pdf`
-- transcricao manual enviada pelo usuario em 2026-03-06
+## Fonte usada para este registro
+
+- `winner-site/assets/form.pdf`
+- `winner-site/assets/Form.png`
 
 Observacao:
 
-- Este arquivo representa o estado mais atualizado informado pelo usuario.
-- O link publico atual do formulario continua exigindo login Google.
+- Este arquivo registra o conteudo e a estrutura aprovados do formulario.
+- Melhorias futuras, como validacoes por expressoes regulares, ficaram para outra etapa.
 
-## Decisoes operacionais validadas
+## Resumo executivo
 
-- O formulario ficara com login Google por enquanto.
-- A confirmacao da inscricao depende de `pagamento + contato manual`.
-- O upload do comprovante nao e obrigatorio, porque algumas pessoas podem ter dificuldade para anexar arquivo no celular.
-- O valor `R$ 20,00` foi mantido novamente na etapa de pagamento para reduzir erro de usuarios desatentos.
+O formulario esta pronto em sua versao aprovada, com dois blocos:
+
+1. dados do participante
+2. participacao no evento e comprovante
+
+O fluxo aprovado e:
+
+1. a pessoa preenche os dados
+2. faz o Pix de `R$ 20,00`
+3. anexa o comprovante no final
+4. aguarda contato de confirmacao da inscricao
 
 ## Cabecalho do formulario
 
@@ -24,7 +33,7 @@ Titulo:
 
 - `Evangelizar é Preciso - Igreja ADMPF`
 
-Mensagem inicial:
+Mensagem inicial exibida:
 
 - `🙏 BEM-VINDO(A)!`
 - `📅 Data: Sábado, 30 de maio de 2026`
@@ -34,7 +43,7 @@ Mensagem inicial:
 - `(Descida do Metrô Engenho da Rainha)`
 - `💰 Investimento: R$ 20,00`
 
-Confirmacao da inscricao:
+Bloco de confirmacao:
 
 1. `Preencha seus dados atentamente`
 2. `Ao final faça o pix`
@@ -42,35 +51,41 @@ Confirmacao da inscricao:
 4. `(aqui mesmo pelo formulário)`
 5. `Um membro de nossa igreja entrará em contato confirmando sua inscrição.`
 
+Link adicional exibido:
+
+- `Para mais detalhes acesse o site do evento:`
+
 Contato exibido:
 
-- `📲 Suporte/Contato: (21) 97733-6783 - Diaconisa Márcia`
+- `📱 Suporte/Contato: (21) 97733-6783 - Diaconisa Márcia`
 
-Observacao exibida pelo Google Forms:
+Observacao automatica do Google Forms:
 
 - `Este formulário está coletando automaticamente os e-mails de todos os participantes.`
 
 ## Secao 1 de 2 - Dados do Participante
 
-Descricao da secao:
+Cabecalho da secao:
 
 - `🧾 Dados do Participante`
 - `Preencha com atenção 🙂`
 
 Campos:
 
-1. `Nome completo`
+1. `Nome completo *`
 Tipo: resposta curta
-Observacao: `Por favor, digite com muita atenção para que seu nome fique correto na impressão do certificado.`
+Observacao:
+- `Por favor, digite com muita atenção para que seu nome fique correto na impressão do certificado.`
 
 2. `Telefone para contato (WhatsApp) *`
 Tipo: resposta curta
-Exemplo: `Digite com DDD. Ex: (21) 99999-9999`
+Exemplo:
+- `Digite com DDD. Ex: (21) 99999-9999`
 
 3. `Você é membro da nossa igreja? *`
 Tipo: multipla escolha
 Opcoes:
-- `Sim.`
+- `Sim`
 - `Não, sou visitante (de outra igreja)`
 - `Não, estou visitando pela primeira vez`
 - `Não frequento igreja`
@@ -87,22 +102,24 @@ Opcoes:
 5. `Você já participou de ações de evangelismo antes? *`
 Tipo: multipla escolha
 Opcoes:
-- `sim`
-- `não`
+- `Sim`
+- `Não`
 
 6. `Autorizo o uso da minha imagem (foto e vídeo) registrada durante o evento para divulgação nas redes sociais, site e materiais da igreja. *`
 Tipo: caixa de selecao
-Instrucao: `Se você autoriza marque abaixo.`
+Instrucao:
+- `Se você autoriza marque abaixo.`
 Opcao:
 - `Autorizo.`
 
 Fluxo da secao:
 
 - `Após a seção 1`
+- `Continuar para a próxima seção`
 
 ## Secao 2 de 2 - Participacao no Evento
 
-Descricao da secao:
+Cabecalho da secao:
 
 - `📅 Participação no Evento`
 - `falta pouco... 🙂`
@@ -132,20 +149,33 @@ Instrucao:
 - `Toque no botão "adicionar arquivo" e envie seu comprovante para confirmar sua inscrição.`
 - `📲 Whatsapp de Suporte: (21) 97733-6783`
 
-## Leitura objetiva
+## Leitura objetiva do que foi aprovado
 
-O formulario esta pronto para o porte do evento.
+O formulario aprovado ficou assim:
 
-Pontos fortes:
+- curto
+- objetivo
+- com caminho de pagamento claro
+- com QR Code do Pix visivel
+- com comprovante no proprio formulario
+- com WhatsApp de suporte visivel
+- com expectativa de confirmacao final explicita
 
-- fluxo curto
-- perguntas objetivas
-- caminho de pagamento claro
-- comprovante enviado no proprio formulario
-- WhatsApp de suporte visivel
-- expectativa de confirmacao final ficou mais clara
+## Itens aprovados para manter
 
-Pontos de atencao assumidos:
+- valor de `R$ 20,00`
+- Pix com chave `325213360001-96`
+- QR Code no proprio formulario
+- upload de comprovante no final
+- contato da Diaconisa Marcia no formulario
+- pergunta de autorizacao de imagem
+- pergunta sobre como a pessoa ficou sabendo do evento
 
-- o login Google segue como escolha operacional atual
-- a confirmacao final continuara manual, apos verificacao do pagamento
+## Proxima etapa futura
+
+Quando for a hora de lapidar:
+
+- adicionar validacoes com expressoes regulares
+- revisar obrigatoriedade e formato de telefone
+- revisar padrao de nome completo
+- revisar consistencia entre obrigatorio e opcional em cada campo
