@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const ATTRIBUTION_STORAGE_KEY = 'winner-site-attribution';
     const REGISTRATION_ENDPOINT = '/api/track-register';
+    const TRACKING_ORIGIN_FALLBACK = 'https://admpf-evangelismo-2026.vercel.app';
 
     const normalizeValue = (value) => {
         if (!value) return '';
@@ -64,8 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const attribution = getCurrentAttribution() || readSavedAttribution();
     saveAttribution(attribution);
 
+    const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+    const trackingOrigin = isLocalPreview ? TRACKING_ORIGIN_FALLBACK : window.location.origin;
+
     document.querySelectorAll('[data-registration-link]').forEach((link) => {
-        const trackedUrl = new URL(REGISTRATION_ENDPOINT, window.location.origin);
+        const trackedUrl = new URL(REGISTRATION_ENDPOINT, trackingOrigin);
 
         if (attribution) {
             Object.entries(attribution).forEach(([key, value]) => {
@@ -75,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        link.href = trackedUrl.pathname + trackedUrl.search;
+        link.href = trackedUrl.toString();
     });
 
     // === Mobile Menu Toggle ===
