@@ -53,15 +53,14 @@ Fluxo configurado:
 
 - `qr` registra a visita no log da Vercel e redireciona para a landing com origem `qrcode`
 - a landing preserva essa origem no navegador
-- todos os CTAs de inscricao passam por `api/track-register`
-- `api/track-register` registra o clique de inscricao no log da Vercel e redireciona para o formulario
+- os CTAs principais levam para a secao `#inscricao`
+- a inscricao acontece no proprio site via fluxo `Pix + WhatsApp`
 
 Observacao:
 
-- isso rastreia visitas do QR e cliques em inscricao sem depender de Google Analytics
-- o endpoint de rastreamento redireciona direto para o Google Forms
-- link direto atual do formulario: `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
-- para saber o inscrito final dentro do Google Forms, ainda seria necessario um campo de origem no proprio formulario
+- a chave Pix oficial exibida na landing e `21977336783`
+- o comprovante deve ser enviado para o WhatsApp da Diaconisa Marcia: `(21) 97733-6783`
+- a confirmacao da vaga acontece pelo WhatsApp, sem Google Forms
 
 ## Publicar em um novo repositório
 

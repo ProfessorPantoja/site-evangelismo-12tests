@@ -1,173 +1,75 @@
 # Mapa do Caminho do Usuario - Inscricao
 
-Data de consolidacao: 2026-03-06
+Data de consolidacao: 2026-03-17
 Escopo: landing `winner-site` + fluxo atual de inscricao
 
-## Decisoes em aberto
+## Decisao aplicada
 
-### 1. Login no Google e estritamente necessario?
+O Google Forms deixou de ser o fluxo oficial.
 
-Estado atual: na verificacao tecnica em 2026-03-06, o formulario final retornou `401` para acesso sem sessao autenticada e o HTML recebido foi de tela de autenticacao do Google.
+O caminho aprovado agora e:
 
-Evidencias:
+1. usuario entra na landing
+2. clica em `Pagar Inscricao`
+3. vai para a secao de pagamento
+4. toca na chave Pix `21977336783`
+5. copia a chave
+6. abre o banco
+7. cola a chave e paga `R$ 20,00`
+8. envia o comprovante com o nome completo para o WhatsApp da Diaconisa Marcia
+9. a confirmacao da vaga acontece no WhatsApp
 
-- Auditoria anterior ja havia sinalizado risco de redirecionamento para `accounts.google.com`.
-- Cadeia atual observada:
-  - `https://admpf-evangelismo-2026.vercel.app/api/track-register?...`
-  - `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
-  - resposta final `401`
+## Motivo da mudanca
 
-Leitura pratica:
-
-- Para decisao operacional, deve-se assumir hoje que o visitante pode sim enfrentar barreira de login.
-- Em termos de conversao, isso equivale a "o formulario nao esta publico o suficiente".
-
-Decisao recomendada:
-
-- Confirmar e, se necessario, reconfigurar o Google Forms para aceitar respostas sem login.
-- Nao divulgar em massa enquanto essa parte nao estiver validada em navegacao anonima real.
-
-### 2. Link direto para o formulario
-
-Estado atual:
-
-- Ja existe log tecnico na Vercel para QR e clique em inscricao
-- Futuramente o GA4 pode cobrir aquisicao e trafego
-- O fluxo atual ja foi simplificado para redirecionamento direto ao Google Forms
-
-Destino atual:
-
-- `https://docs.google.com/forms/d/e/1FAIpQLSdJLjQ8vk9opE-63bY7BHtKdkne6OPQ8OK7372x9vPSVEcJPQ/viewform?usp=publish-editor`
-
-Decisao aplicada:
-
-- Manter o endpoint de rastreamento (`/qr` e `/api/track-register`) e usar destino direto para o Google Forms.
+- remove a barreira do Google Forms
+- elimina risco de login obrigatorio
+- simplifica o caminho no celular
+- deixa a chave Pix visivel dentro da landing
+- reduz duvida sobre o que fazer depois do pagamento
 
 ## Caminho atual do usuario
 
-### Fluxo principal hoje
-
-1. Usuario pensa em participar depois de ver cartaz, divulgacao ou convite.
-2. Usuario escaneia o QR Code ou abre o link.
-3. Usuario cai na landing.
-4. Usuario tenta entender:
-   - o que e o evento
-   - para quem e
-   - quanto custa
-   - como paga
-   - se precisa comprovante
-5. Usuario clica em inscricao.
-6. Passa por:
-   - endpoint de rastreamento
-   - Google Forms
-7. Se conseguir abrir o formulario:
-   - preenche dados
-   - opcionalmente envia comprovante
-   - envia resposta
-8. A partir dai, a confirmacao final depende do que o formulario e o processo operacional comunicam.
-
-## Pontos de perda no fluxo atual
-
-### Antes do clique
-
-- Falta de chave Pix e favorecido.
-- Falta de regra sobre certificado.
-- Possivel duvida sobre comprovante e validacao final.
-- Possivel duvida sobre "estou inscrito ao preencher" versus "estou inscrito apos pagar".
-
-### No clique
-
-- O clique agora ficou mais previsivel, mas o bloqueio por login Google continua sendo o principal atrito.
-
-### No formulario
-
-- Possivel exigencia de login Google.
-- Possivel abandono se o usuario nao tiver conta logada no celular.
-- Possivel abandono se o usuario nao estiver pronto para anexar comprovante.
-
-### Depois do envio
-
-- Risco de incerteza:
-  - "ja estou inscrito?"
-  - "falta pagar?"
-  - "falta enviar comprovante?"
-  - "vou receber confirmacao por WhatsApp?"
-
-## Variantes mais provaveis
-
-### Variante A - usuario motivado
-
-1. Ve o cartaz.
-2. Escaneia.
-3. Entra no site.
-4. Clica em inscricao quase sem ler.
-5. Bate em login ou formulario.
-6. Pode concluir rapido ou abandonar na hora.
-
-### Variante B - usuario cauteloso
-
-1. Ve o cartaz.
-2. Entra no site.
-3. Le FAQ e secao de inscricao.
-4. Fica em duvida sobre Pix, comprovante, certificado ou confirmacao.
-5. Adia a inscricao.
-
-### Variante C - usuario de celular com pouco contexto
-
-1. Escaneia o QR num momento corrido.
-2. Entra na landing.
-3. Clica em inscricao.
-4. Encontra atrito tecnico.
-5. Fecha e nao volta.
-
-## Fluxo ideal desejado
-
-1. Usuario ve o cartaz.
-2. Escaneia `https://admpf-evangelismo-2026.vercel.app/qr`.
-3. Cai na landing com rastreamento preservado.
-4. Entende em segundos:
+1. usuario pensa em participar depois de ver cartaz, divulgacao ou convite
+2. usuario escaneia o QR Code ou abre o link
+3. cai na landing
+4. entende:
    - valor
-   - forma de pagamento
-   - comprovante
-   - regra de confirmacao
-5. Clica em inscricao.
-6. Vai direto para um formulario publico, sem intermediario, sem login obrigatorio.
-7. Envia.
-8. Ve uma mensagem final objetiva:
-   - inscricao recebida
-   - se falta pagar ou nao
-   - se falta enviar comprovante ou nao
-   - proximo canal oficial de contato
-
-## Riscos operacionais que merecem decisao breve
-
-1. Definir se a inscricao e confirmada:
-   - no envio do formulario
-   - ou somente apos pagamento
-
-2. Definir se comprovante e:
-   - opcional de verdade
-   - opcional inicialmente, mas obrigatorio depois
-   - obrigatorio para confirmar vaga
-
-3. Definir como o usuario sabe que terminou:
-   - mensagem no proprio Google Forms
-   - WhatsApp oficial
-   - email
-
-## Recomendacao pratica de ordem
-
-1. Validar formulario publico sem login em navegacao anonima.
-2. Manter o link direto para o Google Forms.
-3. Preencher no site:
    - chave Pix
-   - favorecido
-   - regra do certificado
-   - regra real de confirmacao da vaga
-4. Revisar a mensagem final do processo para o usuario nao sair em duvida.
+   - regra do comprovante
+   - numero oficial de WhatsApp
+5. clica em `Pagar Inscricao`
+6. copia a chave Pix
+7. faz o Pix no app do banco
+8. envia comprovante + nome completo para `(21) 97733-6783`
+9. encerra o processo
+
+## Pontos que precisam ficar claros no site
+
+- o valor exato e `R$ 20,00`
+- o numero `21977336783` e chave Pix e tambem WhatsApp oficial
+- o comprovante deve ser enviado logo apos o pagamento
+- o nome completo deve acompanhar o comprovante para identificacao e certificado
+- a vaga fica fechada pelo WhatsApp, sem formulario
+
+## Riscos operacionais restantes
+
+1. controle manual de inscritos
+   - agora depende da organizacao no WhatsApp
+
+2. identificacao do participante
+   - se a pessoa mandar apenas a imagem do comprovante, pode faltar nome para certificado
+
+3. controle de limite de vagas
+   - como sao 100 vagas, a equipe precisa acompanhar quando encerrar o recebimento
+
+## Recomendacao pratica
+
+1. responder com uma mensagem padrao no WhatsApp apos receber comprovante
+2. exigir nome completo junto com o comprovante
+3. monitorar manualmente o total de inscritos confirmados
 
 ## Resposta curta para decisao
 
-- Login Google: hoje deve ser tratado como risco real e possivel barreira.
-- Link do formulario: direto para o Google Forms.
-- Foco imediato: limpar o caminho do usuario ate "sua inscricao foi recebida/confirmada".
+- fluxo atual aprovado: `landing -> Pix -> WhatsApp`
+- formulario: descontinuado como caminho oficial
+- foco agora: clareza no site e disciplina operacional no WhatsApp

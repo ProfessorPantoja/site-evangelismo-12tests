@@ -1,7 +1,10 @@
 # Formulario Atual - Google Forms
 
+Status de uso em 2026-03-17: historico
+Fluxo oficial atual: Pix + envio de comprovante pelo WhatsApp da Diaconisa Marcia
+
 Data de consolidacao: 2026-03-10
-Status: aprovado
+Status: descontinuado como fluxo ativo
 
 ## Fonte usada para este registro
 
@@ -14,12 +17,14 @@ Observacao:
 
 ## Resumo executivo
 
-O formulario esta pronto em sua versao aprovada, com dois blocos:
+Este arquivo permanece apenas como registro historico do formulario que foi aprovado antes da mudanca de fluxo.
+
+O formulario estava pronto em sua versao aprovada, com dois blocos:
 
 1. dados do participante
 2. participacao no evento e comprovante
 
-O fluxo aprovado e:
+O fluxo aprovado naquela fase era:
 
 1. a pessoa preenche os dados
 2. faz o Pix de `R$ 20,00`

@@ -5,8 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const ATTRIBUTION_STORAGE_KEY = 'winner-site-attribution';
-    const REGISTRATION_ENDPOINT = '/api/track-register';
-    const TRACKING_ORIGIN_FALLBACK = 'https://admpf-evangelismo-2026.vercel.app';
 
     const normalizeValue = (value) => {
         if (!value) return '';
@@ -64,23 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const attribution = getCurrentAttribution() || readSavedAttribution();
     saveAttribution(attribution);
-
-    const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
-    const trackingOrigin = isLocalPreview ? TRACKING_ORIGIN_FALLBACK : window.location.origin;
-
-    document.querySelectorAll('[data-registration-link]').forEach((link) => {
-        const trackedUrl = new URL(REGISTRATION_ENDPOINT, trackingOrigin);
-
-        if (attribution) {
-            Object.entries(attribution).forEach(([key, value]) => {
-                if (value) {
-                    trackedUrl.searchParams.set(key, value);
-                }
-            });
-        }
-
-        link.href = trackedUrl.toString();
-    });
 
     // === Mobile Menu Toggle ===
     const toggle = document.getElementById('mobile-toggle');
@@ -163,6 +144,58 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isActive) {
                 item.classList.add('active');
                 btn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // === Copy Pix Key ===
+    const copyText = async (text) => {
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return;
+        }
+
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.setAttribute('readonly', '');
+        textArea.style.position = 'absolute';
+        textArea.style.left = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+
+        const copied = document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        if (!copied) {
+            throw new Error('Clipboard indisponivel');
+        }
+    };
+
+    document.querySelectorAll('[data-copy-pix]').forEach((button) => {
+        const pixKey = button.getAttribute('data-copy-pix');
+        const statusId = button.getAttribute('aria-describedby');
+        const statusEl = statusId ? document.getElementById(statusId) : null;
+        let resetTimer = null;
+
+        button.addEventListener('click', async () => {
+            if (!pixKey) return;
+
+            try {
+                await copyText(pixKey);
+                button.classList.add('is-copied');
+
+                if (statusEl) {
+                    statusEl.textContent = 'Chave Pix copiada. Abra seu banco e cole a chave Pix.';
+                }
+
+                window.clearTimeout(resetTimer);
+                resetTimer = window.setTimeout(() => {
+                    button.classList.remove('is-copied');
+                }, 2200);
+            } catch (error) {
+                if (statusEl) {
+                    statusEl.textContent = 'Nao foi possivel copiar automaticamente. Copie manualmente: 21977336783.';
+                }
             }
         });
     });

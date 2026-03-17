@@ -63,15 +63,14 @@
             <li><a href="#faq">FAQ</a></li>
         </ul>
 
-        <a href="/api/track-register" class="navbar__cta" target="_blank" data-registration-link
-            rel="noopener noreferrer" aria-label="Inscreva-se no evento">
+        <a href="#inscricao" class="navbar__cta" aria-label="Ir para o pagamento da inscrição">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                 aria-hidden="true">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
             </svg>
-            Inscreva-se
+            Pagar Inscrição
         </a>
 
         <button class="navbar__mobile-toggle" aria-label="Abrir menu" aria-expanded="false" id="mobile-toggle">
@@ -86,8 +85,7 @@
             <li><a href="#inscricao">Inscrição</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li>
-                <a href="/api/track-register" class="btn btn--primary" target="_blank" data-registration-link
-                    rel="noopener noreferrer">Inscreva-se</a>
+                <a href="#inscricao" class="btn btn--primary">Pagar Inscrição</a>
             </li>
         </ul>
     </nav>
@@ -183,15 +181,14 @@
                 </div>
 
                 <div class="hero__cta-group reveal">
-                    <a href="/api/track-register" class="btn btn--primary" target="_blank" data-registration-link
-                        rel="noopener noreferrer">
+                    <a href="#inscricao" class="btn btn--primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
-                        Inscreva-se Agora — R$ 20
+                        Pagar Inscrição — R$ 20
                     </a>
                     <a href="#sobre" class="btn btn--outline">Saiba Mais</a>
                 </div>
@@ -629,8 +626,8 @@
             <div class="container">
                 <div class="cta-banner reveal">
                     <h2 class="cta-banner__title">Garanta Sua Vaga</h2>
-                    <p class="cta-banner__text">São apenas 100 vagas disponíveis. Faça sua inscrição e venha se equipar
-                        para ganhar almas para Cristo.</p>
+                    <p class="cta-banner__text">São apenas 100 vagas disponíveis. Copie a chave Pix, pague os R$ 20,00
+                        e envie o comprovante para a Diaconisa Márcia no WhatsApp.</p>
                     <div class="vacancy-badge">
                         <span class="vacancy-badge__dot" aria-hidden="true"></span>
                         Vagas Disponíveis
@@ -639,15 +636,14 @@
                         Leve também 1 kg de alimento não perecível no dia.
                     </p>
                     <div style="margin-top: var(--space-6);">
-                        <a href="/api/track-register" class="btn btn--primary cta-banner__button" target="_blank"
-                            data-registration-link rel="noopener noreferrer">
+                        <a href="#inscricao" class="btn btn--primary cta-banner__button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true">
                                 <path d="M5 12h14" />
                                 <path d="m12 5 7 7-7 7" />
                             </svg>
-                            Inscreva-se — R$ 20,00
+                            Ir para o Pix
                         </a>
                     </div>
                 </div>
@@ -659,9 +655,10 @@
             <div class="container">
                 <div class="section__header reveal">
                     <span class="section__label">Inscrição</span>
-                    <h2 class="section__title" id="inscricao-title">Vagas e Pagamento</h2>
+                    <h2 class="section__title" id="inscricao-title">Pagamento da Inscrição</h2>
                     <p class="section__subtitle">
-                        Não temos vagas de carro. Programe sua ida por metrô ou ônibus e confira a rota no Google Maps.
+                        Fluxo simples: copie a chave Pix, pague R$ 20,00 no seu banco e envie o comprovante com seu
+                        nome completo para a Diaconisa Márcia no WhatsApp.
                     </p>
                 </div>
 
@@ -711,38 +708,72 @@
                             </li>
                         </ul>
 
-                        <a href="/api/track-register" class="btn btn--primary" data-registration-link
-                            style="width: 100%;" target="_blank" rel="noopener noreferrer">
-                            Inscreva-se Agora
+                        <a href="#pix-chave" class="btn btn--primary" style="width: 100%;">
+                            Ver Chave Pix
                         </a>
                     </div>
 
-                    <div class="registration-box reveal">
-                        <h3 class="registration-box__title">Forma de Pagamento</h3>
+                    <div class="registration-box registration-box--payment reveal">
+                        <h3 class="registration-box__title">Pague com Pix e envie o comprovante</h3>
 
-                        <div style="margin-bottom: var(--space-5);">
-                            <p class="info-item__label">Método principal</p>
-                            <p class="info-item__value" style="font-size: 1.1rem;">Pix</p>
-                            <p class="info-item__note" style="margin-top: var(--space-3);">A chave Pix está no
-                                formulário de inscrição. <a href="/api/track-register" data-registration-link
-                                    target="_blank" rel="noopener noreferrer">Ver no formulário</a></p>
-                        </div>
+                        <div class="payment-flow">
+                            <ol class="payment-steps" aria-label="Passo a passo do pagamento">
+                                <li>
+                                    <span class="payment-step__number">1</span>
+                                    <div>
+                                        <p class="payment-step__title">Copie a chave Pix</p>
+                                        <p class="payment-step__text">Toque no número abaixo para copiar a chave Pix na
+                                            memória do seu celular.</p>
+                                        <button type="button" class="pix-copy-button payment-step__copy-button"
+                                            data-copy-pix="21977336783" aria-describedby="pix-copy-status">
+                                            <span class="pix-copy-button__value">21977336783</span>
+                                            <span class="pix-copy-button__hint">Toque para copiar</span>
+                                        </button>
+                                        <p class="payment-copy-status" id="pix-copy-status" aria-live="polite"></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="payment-step__number">2</span>
+                                    <div>
+                                        <p class="payment-step__title">Agora abra o app do seu banco</p>
+                                        <p class="payment-step__text">Saia do site, entre no seu banco, cole a chave
+                                            Pix e finalize o pagamento de R$ 20,00.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="payment-step__number">3</span>
+                                    <div>
+                                        <p class="payment-step__title">Envie o comprovante no WhatsApp</p>
+                                        <p class="payment-step__text">Mande o comprovante junto com seu nome completo
+                                            para identificar sua inscrição e o certificado.</p>
+                                    </div>
+                                </li>
+                            </ol>
 
-                        <div style="margin-bottom: var(--space-5);">
-                            <p class="info-item__label">Método secundário</p>
-                            <p class="info-item__value">Dinheiro (exceção)</p>
-                            <p class="info-item__note">Dê preferência ao Pix. Se não conseguir, fale com o responsável.</p>
-                        </div>
+                            <div class="payment-support">
+                                <div>
+                                    <p class="info-item__label">WhatsApp da Diaconisa Márcia</p>
+                                    <p class="info-item__value">
+                                        <a href="https://wa.me/5521977336783?text=Ol%C3%A1%2C%20acabei%20de%20fazer%20o%20Pix%20da%20Conscientiza%C3%A7%C3%A3o%20Evangel%C3%ADstica.%20Estou%20enviando%20meu%20comprovante%20e%20meu%20nome%20completo."
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="payment-support__link">(21) 97733-6783</a>
+                                    </p>
+                                    <p class="info-item__note">Esse é o mesmo número da chave Pix. Envie o comprovante
+                                        nesse número logo após o pagamento.</p>
+                                </div>
 
-                        <div>
-                            <p class="info-item__label">Comprovante</p>
-                            <p class="info-item__value">Upload no formulário</p>
-                        </div>
+                                <div class="payment-confirmation">
+                                    <p class="info-item__label">Confirmação da vaga</p>
+                                    <p class="info-item__value">Após envio do comprovante</p>
+                                    <p class="info-item__note">O fechamento da inscrição acontece pelo WhatsApp.</p>
+                                </div>
+                            </div>
 
-                        <div style="margin-top: var(--space-6);">
-                            <p class="info-item__label">Certificado</p>
-                            <p class="info-item__value">Incluso para os participantes</p>
-                            <p class="info-item__note">Entregue conforme a participação no evento</p>
+                            <a href="https://wa.me/5521977336783?text=Ol%C3%A1%2C%20acabei%20de%20fazer%20o%20Pix%20da%20Conscientiza%C3%A7%C3%A3o%20Evangel%C3%ADstica.%20Estou%20enviando%20meu%20comprovante%20e%20meu%20nome%20completo."
+                                class="btn btn--primary" style="width: 100%;" target="_blank"
+                                rel="noopener noreferrer">
+                                Enviar Comprovante no WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -818,10 +849,10 @@
                             </svg>
                         </button>
                         <div class="faq-item__answer" role="region">
-                            O investimento é de R$ 20,00 por participante. O pagamento principal é via Pix. Dinheiro é
-                            aceito como exceção. Além disso, cada participante deve levar 1 kg de alimento não
-                            perecível no dia do evento. O comprovante pode ser enviado no formulário de inscrição, mas
-                            não é obrigatório.
+                            O investimento é de R$ 20,00 por participante. Toque na chave Pix 21977336783 na seção de
+                            pagamento, faça o Pix no seu banco e envie o comprovante com seu nome completo para a
+                            Diaconisa Márcia no WhatsApp (21) 97733-6783. Além disso, cada participante deve levar 1 kg
+                            de alimento não perecível no dia do evento.
                         </div>
                     </div>
 
@@ -896,7 +927,11 @@
                 <div class="reveal"
                     style="margin-top: var(--space-8); max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
                     <p class="info-item__label">WhatsApp de contato</p>
-                    <p class="info-item__value">(21) 97733-6783</p>
+                    <p class="info-item__value">
+                        <a href="https://wa.me/5521977336783" target="_blank" rel="noopener noreferrer"
+                            class="payment-support__link">(21) 97733-6783</a>
+                    </p>
+                    <p class="info-item__note">Mesmo número da chave Pix para envio do comprovante.</p>
                 </div>
             </div>
         </section>
@@ -934,8 +969,7 @@
                         <li><a href="#info">Informações</a></li>
                         <li><a href="#ministrante">Ministrante</a></li>
                         <li><a href="#local">Como Chegar</a></li>
-                        <li><a href="/api/track-register" target="_blank" data-registration-link
-                                rel="noopener noreferrer">Inscrição</a></li>
+                        <li><a href="#inscricao">Pagamento</a></li>
                     </ul>
                 </div>
             </div>

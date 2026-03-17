@@ -1,5 +1,25 @@
 # Registro de Alteracoes - Winner Site
 
+## 2026-03-17
+
+1. Fluxo de inscricao trocado de formulario para Pix + WhatsApp.
+Arquivos alterados:
+- `winner-site/index.html`
+- `winner-site/style.css`
+- `winner-site/script.js`
+- `winner-site/README.md`
+- `winner-site/MAPA_CAMINHO_USUARIO_INSCRICAO.md`
+- `winner-site/FORMULARIO_ATUAL.md`
+- `winner-site/REGISTRO_ALTERACOES.md`
+Resumo:
+- Todos os CTAs principais passaram a levar para a secao interna de pagamento, sem `Google Forms` e sem `api/track-register`.
+- Secao `Pagamento da Inscricao` reescrita com passo a passo operacional: copiar chave Pix `21977336783`, pagar `R$ 20,00` no banco e enviar comprovante com nome completo para a Diaconisa Marcia no WhatsApp.
+- Implementado botao de copia da chave Pix com feedback visual e mensagem orientando o usuario a abrir o banco e colar a chave.
+- FAQ, links de rodape e textos de suporte atualizados para refletir que a confirmacao da vaga acontece pelo WhatsApp.
+- Documentacao interna revisada para marcar o formulario anterior como historico e registrar o novo caminho oficial `landing -> Pix -> WhatsApp`.
+- Refinamento posterior na mesma data simplificou a secao de pagamento: a chave Pix passou a ficar dentro do passo 1, o bloco separado do Pix foi removido e o passo 2 ficou mais enfatico ao orientar o usuario a sair do site e abrir o app do banco.
+- Texto visivel ao visitante deixou de mencionar `formulario`, mantendo foco apenas no fechamento da inscricao pelo WhatsApp.
+
 ## 2026-03-10
 
 1. Fluxo de inscricao simplificado para link direto do Google Forms.
